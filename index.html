@@ -1,1 +1,25 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>KiTTEN GAME</title>
+    <link rel="icon" href="images/SugarSkullCat.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<h1>KiTTEN GAME</h1>
+	<div id="score">Score: 0</div>
+	<div id="lives">Lives: 9</div>
+	<div id="gameOver">
+		<h1>GAME OVER</h1>
+		<img id="GO" class="skullImg" src="images/SugarSkullCat.png">
+	<hr>
+		<button id="resetButton" class="button" onclick="history.go(0)">Reset</button>
+	</div>
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+</html>
