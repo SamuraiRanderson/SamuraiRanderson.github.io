@@ -16,6 +16,11 @@ var itemSprites = ['images/cup.png', // Array of item sprites //
     'images/shoppingBag.png'];
 
 // Enemies our player must avoid
+function startClick () { // Starts the game //
+    gameOver = false;
+    document.getElementById('startGameScreen').style.display = 'none';
+}
+
 var Enemy = function(x,y) {
     this.x = x; // Sets (x,y) enemy position on canvas //
     this.y = y;
@@ -57,7 +62,7 @@ Item.prototype.resetNew = function() { // Random item is placed on canvas after 
 };
 
 Item.prototype.update = function() { // Collision detection for player/items //
-        if(player.x <= (this.x + 50) && this.x <= (player.x + 50) && player.y <= (this.y + 50) && this.y <= (player.y + 50)) {
+        if(player.x <= (this.x + 60) && this.x <= (player.x + 60) && player.y <= (this.y + 60) && this.y <= (player.y + 60)) {
             item.resetNew();
             score = score + 100;
             document.getElementById('score').innerHTML = 'Score: ' + score;
@@ -139,7 +144,8 @@ function GameOver () { // Triggers the Game Over screen //
     gameOver = true;
     document.getElementById('gameOver').style.display = 'block';
 
-};
+}
+
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 var allEnemies = [];
