@@ -1,7 +1,7 @@
 frontend-nanodegree-arcade-game / The Kitten Game
 =================================================
 
-[Play Game](http:samurairanderson.github.io.)
+[Play Game](https://github.com/SamuraiRanderson/SamuraiRanderson.github.io)
 
 ## Game Instructions 
 
