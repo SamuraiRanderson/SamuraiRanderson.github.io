@@ -7,7 +7,7 @@ frontend-nanodegree-arcade-game / The Kitten Game
 
 * Use the arrow keys to move up, down, left and right. 
 
-* Colliding with a bug results in the loss one of your lives.
+* Colliding with a bug results in the loss of one of your lives.
 
 * Your player/Kitten gets NINE lives!
 
