@@ -2,7 +2,7 @@
 Custom version of 2048 to tinker with
 ======================================
 
-[Play Game](SamuraiRanderson.github.io/index.html)
+[Play Game](http://samurairanderson.github.io./)
 
 ======================================
 
