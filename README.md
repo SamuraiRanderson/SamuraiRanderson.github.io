@@ -1,6 +1,12 @@
 ## Website Performance Optimization portfolio project
 
+<<<<<<< HEAD
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
+||||||| merged common ancestors
+[Play Game](http:samurairanderson.github.io.)
+=======
+[Play Game](http://samurairanderson.github.io./)
+>>>>>>> e13aac135b690a5f47d08298ab2a59160e60d9af
 
 To get started, check out the repository, inspect the code,
 
