@@ -29,9 +29,15 @@ form {
   font-weight: 800;
 }
 
+.img-responsive {
+  height: 390px;
+  width: 519px;
+}
+
 .mover {
   position: fixed;
-  width: 256px;
+  height: 73.33px;
+  width: 100px;
   z-index: -1;
 }
 
