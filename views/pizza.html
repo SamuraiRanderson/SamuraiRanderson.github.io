@@ -1,8 +1,11 @@
 <!DOCTYPE HTML>
 <html>
-<head>  
-  <link rel="stylesheet" href="css/style.css">
+<head>
+  <meta charset="utf-8"> <!-- Added meta tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<link rel="stylesheet" href="css/style.css"> Inlined CSS -->
   <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <style>**{outline:red solid 1px!important}*/ *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-box-sizing:border-box}body{background:#000;font-family:"Trebuchet MS",Helvetica,sans-serif}input{background:grey;font-size:18px}form{display:inline-block}.centered{text-align:center}#pizzaSize{font-weight:800}.mover{height:100px;position:fixed;transform:translateZ(0);width:73.33px;z-index:-1}.randomPizzaContainerSmall{display:flex;float:left;height:325px;width:25%}.randomPizzaContainerMedium{display:flex;float:left;height:325px;width:33.33%}.randomPizzaContainerLarge{display:flex;float:left;height:325px;width:50%}.container{background-color:rgba(240,60,60,.8)} </style>
 </head>
 
 <body>
@@ -23,7 +26,7 @@
                 <form action="#locations">
                   <input type="submit" value="Locations">
                 </form>
-                <form action="#" onsubmit="alert('Thanks for clicking! This button doesn\'t do anything because this is a fake pizzeria :\)')">
+                <form action="#" onsubmit="alert('Thanks for clicking! This button doesn't do anything because this is a fake pizzeria :\)')">
                   <input type="submit" value="Contact Us">
                 </form>
               </div>
@@ -36,12 +39,12 @@
     </div>
     <div id="callToAction" class="row">
       <div class="col-md-4">
-        <img src="images/pizzeria.jpg" class="img-responsive"> <!-- Image credit to: http://commons.wikimedia.org/wiki/File:HK_TST_night_%E5%98%89%E8%98%AD%E9%81%93_Granville_Road_restaurant_Paisano's_Pizzeria_pizza_Dec-2013.JPG -->
+        <img src="images/pizzeria.jpg" class="img-responsive" alt="pizzeria pic"> <!-- Image credit to: http://commons.wikimedia.org/wiki/File:HK_TST_night_%E5%98%89%E8%98%AD%E9%81%93_Granville_Road_restaurant_Paisano's_Pizzeria_pizza_Dec-2013.JPG -->
       </div>
       <div class="col-md-8">
         <div class="row">
           <div class="col-md-12">
-            <h2>We Have Hundreds of Pizza Recipes!</h2>            
+            <h2>We Have Hundreds of Pizza Recipes!</h2>
             <p>At Cam's Pizzeria, we know you want options. Pepperoni? Boring. Cheese? No way! Sausage? C'mon, let's get creative.</p>
 
             <p>We have every pizza ingredient imaginable in our kitchen because we know you take choice seriously. Take a look through our menu of hundreds of pizza options and we know that you'll find something you love.</p>
@@ -102,9 +105,9 @@
           </div>
         </div>
         <div id="randomPizzas" class="row">
-          <div id="pizza0" class="randomPizzaContainer" style="width:33.33%;">
+          <div id="pizza0" class="randomPizzaContainerMedium"> <!-- Modified -->
             <div class="col-md-6">
-              <img src="images/pizza.png" class="img-responsive">
+              <img src="images/pizza.png" class="img-responsive" alt="pizza"> <!-- Added alt tag -->
             </div>
             <div class="col-md-6">
               <h4>The Udacity Special</h4>
@@ -119,9 +122,9 @@
               </ul>
             </div>
           </div>
-          <div id="pizza1" class="randomPizzaContainer" style="width:33.33%;">
+          <div id="pizza1" class="randomPizzaContainerMedium"> <!-- Modified -->
             <div class="col-md-6">
-              <img src="images/pizza.png" class="img-responsive">
+              <img src="images/pizza.png" class="img-responsive" alt="pizza"> <!-- Added alt tag -->
             </div>
             <div class="col-md-6">
               <h4>The Cameron Special</h4>

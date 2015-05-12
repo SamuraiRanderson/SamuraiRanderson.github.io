@@ -8,8 +8,8 @@
 }
 
 body {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
   background: black;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 input {
@@ -30,20 +30,32 @@ form {
 }
 
 .mover {
+  height: 100px;
   position: fixed;
-  width: 256px;
+  transform: translateZ(0);
+  width: 73.33px;
   z-index: -1;
 }
 
-.randomPizzaContainer {
-  float: left;
+.randomPizzaContainerSmall {
   display: flex;
+  float: left;
+  height: 325px;
+  width: 25%;
 }
 
-.randomPizzaContainer:after {
-  content: "";
-  display: table;
-  clear:both;
+.randomPizzaContainerMedium {
+  display: flex;
+  float: left;
+  height: 325px;
+  width: 33.33%;
+}
+
+.randomPizzaContainerLarge {
+  display: flex;
+  float: left;
+  height: 325px;
+  width: 50%;
 }
 
  .container {
