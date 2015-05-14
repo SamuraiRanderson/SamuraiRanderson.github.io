@@ -506,7 +506,7 @@ var latestKnownScroll = 0, //  Decoupling the scroll event.
       scrolling = false;
 
 function onScroll() { //  Initiating the requestAnimationFrame.
-  latestKnownScrollScroll = window.scrollY; //  Storing the window's scroll position & not triggering an unnecessary draw call.
+  latestKnownScroll = window.scrollY; //  Storing the window's scroll position & not triggering an unnecessary draw call.
     requestScroll();
 }
 
