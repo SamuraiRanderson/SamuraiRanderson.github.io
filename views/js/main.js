@@ -497,55 +497,50 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 // The following code for sliding background pizzas was pulled from Ilya's demo found at:
 // https://www.igvita.com/slides/2012/devtools-tips-and-tricks/jank-demo.html
 
-var lastScroll = 0;
+// Uncoupled the original updatePosition functon and converted it using the "Remove Local Functions"
+// method sited in P4 references to improve performance & keep the js from doing unneccassary and
+// time consuming calculations.
 
-function whenScroll() {
-  lastScroll = window.scrollDown;
+
+var latestKnownScroll = 0, //  Decoupling the scroll event.
+      scrolling = false;
+
+function onScroll() { //  Initiating the requestAnimationFrame.
+  latestKnownScrollScroll = window.scrollY; //  Storing the window's scroll position & not triggering an unnecessary draw call.
     requestScroll();
 }
-
-var scrolling = false;
 
 function requestScroll() {
   if(!scrolling) {
     requestAnimationFrame(updatePositions);
   }
-  scrolling = true;
+  scrolling = true; //
 }
 
 
 // Moves the sliding background pizzas based on scroll position
 function updatePositions() {
-  scrolling = false;
+  scrolling = false; // Reset so we can capture the next scroll.
   frame++;
   window.performance.mark("mark_start_frame");
 
   var items = document.querySelectorAll('.mover');
-  var test = document.body.scrollTop / 1250;
-  for (var i = 0, len = items.length; i < len; i++) {
-    var phase = Math.sin(test + (i % 5));
-    items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
-  }
-
-    // User Timing API to the rescue again. Seriously, it's worth learning.
-    // Super easy to create custom metrics.
-    window.performance.mark("mark_end_frame");
-    window.performance.measure("measure_frame_duration", "mark_start_frame", "mark_end_frame");
-    if (frame % 10 === 0) {
-      var timesToUpdatePosition = window.performance.getEntriesByName("measure_frame_duration");
-      logAverageFrame(timesToUpdatePosition);
-    }
+  var test = document.body.scrollTop / 1250; // Removed equation from loop to boost performace.
+  var len = items.length;
+    for (var i = 0; i < len; i++) {
+      var phase = Math.sin(test + (i % 5));
+      items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
 
   // User Timing API to the rescue again. Seriously, it's worth learning.
   // Super easy to create custom metrics.
-  /*window.performance.mark("mark_end_frame");
+  window.performance.mark("mark_end_frame");
   window.performance.measure("measure_frame_duration", "mark_start_frame", "mark_end_frame");
   if (frame % 10 === 0) {
     var timesToUpdatePosition = window.performance.getEntriesByName("measure_frame_duration");
     logAverageFrame(timesToUpdatePosition);
-  }*/
-
+  }
+}
 
 // runs updatePositions on scroll
 window.addEventListener('scroll', updatePositions);
