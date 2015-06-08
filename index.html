@@ -11,8 +11,8 @@
 
     <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
     <!-- <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">--> <!-- Web fonts removed -->
-    <!-- <link href="css/style.css" rel="stylesheet">--> <!-- Inlined css above -->
-    <!-- <link href="css/print.css" rel="stylesheet">--> <!-- Added media query "print" -->
+    <!-- <link href="css/style.css" rel="stylesheet">--> <!-- Inlined css above so it's not render blocking -->
+    <!-- <link href="css/print.css" rel="stylesheet">--> <!-- Added media query "print" so it's only used when the user wants to print -->
 
     <link href="css/print-min.css" rel="stylesheet" media="print">
 
@@ -28,7 +28,8 @@
       <div class="hero">
         <strong>I love web development!</strong> This is a template for a simple portfolio. I decided to use it to showcase a few Udacity courses I've taken and some teaching work, but you can use it to showcase any kind of project that you want the world to see :) <br> Contact me: me@email.com
       </div>
-
+      <!-- Images were initially stored on a https server. To improve performance I resized the images, compressed the images
+           and stores them locally. -->
       <div class="content">
         <ul>
           <li>
@@ -61,8 +62,7 @@
       <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
     </footer>
   </body>
-    <script src="http://www.google-analytics.com/analytics.js" async></script>
-    <script async src="js/google-analytics.js"></script>
+   <!-- Inlined the google-analytics.js file & asynch the analytics to keep them from render blocking -->
     <script>
       (function(w,g){w['GoogleAnalyticsObject']=g;
       w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
@@ -70,5 +70,6 @@
       ga('create', 'UA-XXXX-Y');
       ga('send', 'pageview');
     </script>
+    <script async src="http://www.google-analytics.com/analytics.js"></script>
     <script async src="js/perfmatters.js"></script>
 </html>
