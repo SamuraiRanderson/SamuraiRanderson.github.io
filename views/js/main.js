@@ -455,10 +455,10 @@ var resizePizzas = function(size) {
     // document.querySelectorAll(".randomPizzaConatiner" has been condensed, the 'px' ruse has
     // been replaced with "%", the dx varibale has been removed &
     // DOM access has been moved outside of the loop.
-    var randomPizzas = document.querySelectorAll(".randomPiizzaContainer");
+    var randomPizzas = document.querySelectorAll(".randomPizzaContainer");
 
     for (var i = 0; i < randomPizzas.length; i ++) {
-      randomPizzas[i].stylr.width = newWidth + "%";
+      randomPizzas[i].style.width = newWidth + "%";
     }
   }
 
