@@ -421,44 +421,30 @@ var resizePizzas = function(size) {
 
   changeSliderLabel(size);
 
-  // Returns the size difference to change a pizza element from one size to another. Called by changePizzaSlices(size).
-  function determineDx (elem, size) {
-    var oldwidth = elem.offsetWidth;
-    var windowwidth = document.querySelector("#randomPizzas").offsetWidth;
-    var oldsize = oldwidth / windowwidth;
-
-    // TODO: change to 3 sizes? no more xl?
-    // Changes the slider value to a percent width
-    function sizeSwitcher (size) {
+  function sizeSwitcher(size) {
       switch(size) {
         case "1":
-          return 0.25;
+          return "randomPizzaContainerSmall";
         case "2":
-          return 0.3333;
+          return "randomPizzaContainerMedium";
         case "3":
-          return 0.5;
+          return "randomPizzaContainerLarge";
         default:
           console.log("bug in sizeSwitcher");
-      }
     }
-
-    var newsize = sizeSwitcher(size);
-    var dx = (newsize - oldsize) * windowwidth;
-
-    return dx;
   }
 
-  // Iterates through pizza elements on the page and changes their widths
-  function changePizzaSizes(size) {
-    // Per Browser Rendering Optimization:
-    // Removed costly performance equations, the repeated/unecessary calling of
-    // document.querySelectorAll(".randomPizzaConatiner" has been condensed, the 'px' ruse has
-    // been replaced with "%", the dx varibale has been removed &
-    // DOM access has been moved outside of the loop.
-    var randomPizzas = document.querySelectorAll(".randomPizzaContainer");
+/*
+  Above: Changed the structure of the function sizeSwitcher & removed the dx aspect.
+  Below: Now using the childNodes of "randomPizzas" to make the changes to our site.
+*/
 
-    for (var i = 0; i < randomPizzas.length; i ++) {
-      randomPizzas[i].style.width = newWidth + "%";
+  function changePizzaSizes(size) {
+    var randomPizzaContainers = document.getElementById("randomPizzas").childNodes;
+    var dx = sizeSwitcher(size);
+
+    for (var i = 0; i < randomPizzaContainers.length; i++) {
+      randomPizzaContainers[i].className = dx;
     }
   }
 
@@ -519,11 +505,11 @@ function requestScroll() {
   if(!scrolling) {
     requestAnimationFrame(updatePositions);
   }
-  scrolling = true; //
+  scrolling = true;
 }
 
-
 // Moves the sliding background pizzas based on scroll position
+
 function updatePositions() {
   scrolling = false; // Reset so we can capture the next scroll.
   frame++;
