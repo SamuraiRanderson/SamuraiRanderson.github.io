@@ -358,6 +358,8 @@ var makeRandomPizza = function() {
   return pizza;
 };
 
+
+
 // returns a DOM element for each pizza
 var pizzaElementGenerator = function(i) {
   var pizzaContainer,             // contains pizza title, image and list of ingredients
@@ -372,10 +374,18 @@ var pizzaElementGenerator = function(i) {
   pizzaImage = document.createElement("img");
   pizzaDescriptionContainer = document.createElement("div");
 
-  pizzaContainer.classList.add("randomPizzaContainer");
-  pizzaContainer.style.width = "33.33%";
-  pizzaContainer.style.height = "325px";
-  pizzaContainer.id = "pizza" + i;                // gives each pizza element a unique id
+  //pizzaContainer.classList.add("randomPizzaContainer");
+  //pizzaContainer.style.width = "33.33%";  // Moved to CSS.
+  //pizzaContainer.style.height = "325px";  // Moved to CSS.
+  pizzaContainer.id = "pizza" + i; // gives each pizza element a unique id
+
+/*
+  Moved the height & width properties to the CSS file by establishing size classes. The HTML
+  file was updated as well for the two premade pizzas.
+*/
+
+  pizzaContainer.classList.add("randomPizzaContainerMedium");
+
   pizzaImageContainer.classList.add("col-md-6");
 
   pizzaImage.src = "images/pizza.png";
@@ -488,10 +498,11 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 // The following code for sliding background pizzas was pulled from Ilya's demo found at:
 // https://www.igvita.com/slides/2012/devtools-tips-and-tricks/jank-demo.html
 
-// Uncoupled the original updatePosition functon and converted it using the "Remove Local Functions"
-// method sited in P4 references to improve performance & keep the js from doing unneccassary and
-// time consuming calculations.
-
+/*
+  Uncoupled the original updatePosition functon and converted it using the "Remove Local Functions"
+  method sited in P4 references to improve performance & keep the js from doing unneccassary and
+  time consuming calculations.
+*/
 
 var latestKnownScroll = 0, //  Decoupling the scroll event.
       scrolling = false;
@@ -509,7 +520,6 @@ function requestScroll() {
 }
 
 // Moves the sliding background pizzas based on scroll position
-
 function updatePositions() {
   scrolling = false; // Reset so we can capture the next scroll.
   frame++;
