@@ -375,16 +375,11 @@ var pizzaElementGenerator = function(i) {
   pizzaDescriptionContainer = document.createElement("div");
 
   //pizzaContainer.classList.add("randomPizzaContainer");
-  //pizzaContainer.style.width = "33.33%";  // Moved to CSS.
-  //pizzaContainer.style.height = "325px";  // Moved to CSS.
+  pizzaContainer.style.width = "33.33%";
+  pizzaContainer.style.height = "325px";
   pizzaContainer.id = "pizza" + i; // gives each pizza element a unique id
 
-/*
-  Moved the height & width properties to the CSS file by establishing size classes. The HTML
-  file was updated as well for the two premade pizzas.
-*/
-
-  pizzaContainer.classList.add("randomPizzaContainerMedium");
+  pizzaContainer.classList.add("randomPizzaContainerMedium"); // Added to HTML & CSS as well.
 
   pizzaImageContainer.classList.add("col-md-6");
 
