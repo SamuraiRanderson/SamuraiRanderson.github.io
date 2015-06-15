@@ -56,6 +56,7 @@ http://www.webreference.com/programming/javascript/jkm3/index.html
 http://gent.ilcore.com/2011/03/how-not-to-trigger-layout-in-webkit.html
 https://developer.chrome.com/devtools/docs/network#resource-network-timing
 GitHub
+http://jscompress.com/
 
 
    
