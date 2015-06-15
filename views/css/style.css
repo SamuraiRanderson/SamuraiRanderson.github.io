@@ -30,18 +30,43 @@ form {
 }
 
 .img-responsive {
-  height: 390px;
-  width: 519px;
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 
 .mover {
   position: fixed;
-  height: 73.33px;
-  width: 100px;
+  height: 100px;
+  width: 73.33px;
   z-index: -1;
+  transform: translateZ(0);
 }
 
 .randomPizzaContainer {
+  height: auto;
+  max-width: 100%;
+  float: left;
+  display: table;
+}
+
+.randomPizzaContainerSmall {
+  width: 25%;
+  height: 325px;
+  float: left;
+  display: flex;
+}
+
+.randomPizzaContainerMedium {
+  width: 33.33%;
+  height: 325px;
+  float: left;
+  display: flex;
+}
+
+.randomPizzaContainerLarge {
+  width: 50%;
+  height: 325px;
   float: left;
   display: flex;
 }
@@ -49,7 +74,7 @@ form {
 .randomPizzaContainer:after {
   content: "";
   display: table;
-  clear:both;
+  clear: both;
 }
 
  .container {
