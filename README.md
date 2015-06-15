@@ -1,5 +1,69 @@
-## Website Performance Optimization portfolio project
+## Website Performance Optimization Portfolio Project
 =====================================================
+
+
+####Part One: Optimize PageSpeed Insights score for index.html
+
+Measured the initial PageSpeed Insight scores which were Mobile 26/100 Desktop 29/100.
+
+Modifications and Optimizations Implemented:
+1) Removed Web Fonts.
+2) Added media query to print.css.
+3) Inlined style.css.
+4) Resized, compressed, and locally stored the images used.
+5) Inlined google-analytics.js file.
+6) Async the js/analytics.js & js/perfmatters.js files.
+
+Measured performance after making the above changes and they were Mobile 93/100 Desktop 95/100.
+
+####Part Two: Optimize Frames per Second in pizza.html
+
+Measured the initial Frames Per Second which was between 20 - 30 fps.
+
+Modifications and Optimizations Implemented:
+1) Added meta info to pizza.html.
+2) Reduced the number of pizza's generated from 200 to 30.
+3) Compressed, and resized, images.
+4) Utilized style.css to assign properties to pizza images.
+5) Compressed, and inlined, style.css.
+6) Modified/Optimized Javascript. Changes are outlined in the comments within main.js.
+
+Measured performance after the above changes and it is now running at 60 FPS.
+
+####Part Three: Computation Efficiency
+
+Modifications and Optimizations implemented to get the time to resize pizza's less than 5 ms.
+1) Modified/Optimized Javascript, CSS and HTML to achieve the final result.
+2) Replaced "randomPizzaContainer" (377 main.js) with "randomPizzaConatinerMedium" (387 main.js) and created 
+   a corresponding class for each size within 'function sizeSwitcher(size)' (434 main.js). I updated 
+   pizza.html as a rsult of this change (109 & 126 in pizza.html). 
+3) As a result of the changes made to "function sizeSwitcher(size)" I updated style.css for each size.
+4) Utilized a technique by Paul Lewis (http://www.html5rocks.com/en/tutorials/speed/animations/) to rewrite
+   the scroll funtion.
+5) Removed the DOM access from the for loop in "function updatePositions()" to boost performace and avoid
+   triggering a unecessary layouts.
+
+Measures performance after the above changes and resizing pizzas is now at .5ms.
+
+
+####References used for this project include:
+
+http://www.html5rocks.com/en/tutorials/speed/animations/
+Office Hours: P4 1/7/2015
+Office Hours: P3, P4 2/16/2015
+Office Hours: P3, P4 1/23/2015
+http://www.webreference.com/programming/javascript/jkm3/index.html
+http://gent.ilcore.com/2011/03/how-not-to-trigger-layout-in-webkit.html
+https://developer.chrome.com/devtools/docs/network#resource-network-timing
+GitHub
+
+
+   
+
+
+
+
+
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
 
 To get started, check out the repository, inspect the code,
