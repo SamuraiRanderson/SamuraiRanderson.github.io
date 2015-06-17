@@ -17,15 +17,15 @@ Below is an overview of the optimizations, modifications, and tests performed to
 ####Part One: Optimize PageSpeed Insights score for index.html
 
 
-Measured the initial PageSpeed Insight scores which were - Mobile: 26/100, Desktop: 29/100.
+Measured the initial Google PageSpeed Insight scores which were - Mobile: 26/100, Desktop: 29/100.
 
 Modifications and Optimizations Implemented:
-1) Removed Web Fonts.
-2) Added media query to print.css.
-3) Inlined style.css.
-4) Resized, compressed, and locally stored the images used.
-5) Inlined google-analytics.js file.
-6) Async the js/analytics.js & js/perfmatters.js files.
+1. Removed Web Fonts.
+2. Added media query to print.css.
+3. Inlined style.css.
+4. Resized, compressed, and locally stored the images used.
+5. Inlined google-analytics.js file.
+6. Async the js/analytics.js & js/perfmatters.js files.
 
 Measured performance after making the above changes and they were - Mobile: 93/100, Desktop: 95/100.
 
