@@ -1,10 +1,23 @@
 ## Website Performance Optimization Portfolio Project
 =====================================================
 
+In this project our cohort was assigned the challenge of tackling, and correcting, some performance-related issues
+that exist on a website provided to us. The main tasks were to achieve a [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)score of 90+ for index.html,
+achieving 60 Frames Per Second for pizza.html, and getting the pizza size animations on pizza.html to resize in under 5 ms.
+
+To run/test the index.html please [Click Here](http://samurairanderson.github.io)
+
+To test the optimizations implemented for pizza.html please [Click Here](http://samurairanderson.github.io./views/pizza.html)
+
+Comments for specific changes made can be found nested within index.html, views/pizza.html, views/js/main.js, and view/css/style.css.
+
+Below is an overview of the optimizations, modifications, and tests performed to meet the rubric specifications for this project. 
+ 
 
 ####Part One: Optimize PageSpeed Insights score for index.html
 
-Measured the initial PageSpeed Insight scores which were Mobile 26/100 Desktop 29/100.
+
+Measured the initial PageSpeed Insight scores which were - Mobile: 26/100, Desktop: 29/100.
 
 Modifications and Optimizations Implemented:
 1) Removed Web Fonts.
@@ -14,7 +27,7 @@ Modifications and Optimizations Implemented:
 5) Inlined google-analytics.js file.
 6) Async the js/analytics.js & js/perfmatters.js files.
 
-Measured performance after making the above changes and they were Mobile 93/100 Desktop 95/100.
+Measured performance after making the above changes and they were - Mobile: 93/100, Desktop: 95/100.
 
 ####Part Two: Optimize Frames per Second in pizza.html
 
@@ -32,32 +45,35 @@ Measured performance after the above changes and it is now running at 60 FPS.
 
 ####Part Three: Computation Efficiency
 
+Measured the initial resize time which was 83.33 ms.
+
 Modifications and Optimizations implemented to get the time to resize pizza's less than 5 ms.
 1) Modified/Optimized Javascript, CSS and HTML to achieve the final result.
-2) Replaced "randomPizzaContainer" (377 main.js) with "randomPizzaConatinerMedium" (387 main.js) and created 
+2) Replaced "randomPizzaContainer" (377 main.js) with "randomPizzaContainerMedium" (387 main.js) and created 
    a corresponding class for each size within 'function sizeSwitcher(size)' (434 main.js). I updated 
-   pizza.html as a rsult of this change (109 & 126 in pizza.html). 
+   pizza.html as a result of this change (109 & 126 in pizza.html). 
 3) As a result of the changes made to "function sizeSwitcher(size)" I updated style.css for each size.
 4) Utilized a technique by Paul Lewis (http://www.html5rocks.com/en/tutorials/speed/animations/) to rewrite
-   the scroll funtion.
-5) Removed the DOM access from the for loop in "function updatePositions()" to boost performace and avoid
-   triggering a unecessary layouts.
+   the scroll function.
+5) Removed the DOM access from the for loop in "function updatePositions()" to boost performance and avoid
+   triggering a unnecessary layouts.
 
-Measures performance after the above changes and resizing pizzas is now at .5ms.
+Measures performance after the above changes and resizing pizzas is now at 0.46 ms.
 
 
 ####References used for this project include:
 
+[Udacity's Website Performance Optimization](https://www.udacity.com/course/website-performance-optimization--ud884)
+[Udacity's' Browser Rendering Optimization](https://www.udacity.com/course/browser-rendering-optimization--ud860)
 http://www.html5rocks.com/en/tutorials/speed/animations/
-Office Hours: P4 1/7/2015
-Office Hours: P3, P4 2/16/2015
-Office Hours: P3, P4 1/23/2015
 http://www.webreference.com/programming/javascript/jkm3/index.html
 http://gent.ilcore.com/2011/03/how-not-to-trigger-layout-in-webkit.html
 https://developer.chrome.com/devtools/docs/network#resource-network-timing
 GitHub
+Udacity Office Hours
 https://github.com/0per8/Udacity-Project-4
 http://jscompress.com/
+Stack Overflow
 
 
    
