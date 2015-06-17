@@ -19,13 +19,13 @@ Below is an overview of the optimizations, modifications, and tests performed to
 
 Measured the initial Google PageSpeed Insight scores which were - Mobile: 26/100, Desktop: 29/100.
 
-Modifications and Optimizations Implemented
-1. Removed Web Fonts.
-2. Added media query to print.css.
-3. Inlined style.css.
-4. Resized, compressed, and locally stored the images used.
-5. Inlined google-analytics.js file.
-6. Async the js/analytics.js & js/perfmatters.js files.
+Modifications and Optimizations Implemented:
+* Removed Web Fonts.
+* Added media query to print.css.
+* Inlined style.css.
+* Resized, compressed, and locally stored the images used.
+* Inlined google-analytics.js file.
+* Async the js/analytics.js & js/perfmatters.js files.
 
 Measured performance after making the above changes and they were - Mobile: 93/100, Desktop: 95/100.
 
@@ -34,12 +34,12 @@ Measured performance after making the above changes and they were - Mobile: 93/1
 Measured the initial Frames Per Second which was between 20 - 30 fps.
 
 Modifications and Optimizations Implemented:
-1) Added meta info to pizza.html.
-2) Reduced the number of pizza's generated from 200 to 30.
-3) Compressed, and resized, images.
-4) Utilized style.css to assign properties to pizza images.
-5) Compressed, and inlined, style.css.
-6) Modified/Optimized Javascript. Changes are outlined in the comments within main.js.
+* Added meta info to pizza.html.
+* Reduced the number of pizza's generated from 200 to 30.
+* Compressed, and resized, images.
+* Utilized style.css to assign properties to pizza images.
+* Compressed, and inlined, style.css.
+* Modified/Optimized Javascript. Changes are outlined in the comments within main.js.
 
 Measured performance after the above changes and it is now running at 60 FPS.
 
@@ -47,16 +47,16 @@ Measured performance after the above changes and it is now running at 60 FPS.
 
 Measured the initial resize time which was 83.33 ms.
 
-Modifications and Optimizations implemented to get the time to resize pizza's less than 5 ms.
-1) Modified/Optimized Javascript, CSS and HTML to achieve the final result.
-2) Replaced "randomPizzaContainer" (377 main.js) with "randomPizzaContainerMedium" (387 main.js) and created 
-   a corresponding class for each size within 'function sizeSwitcher(size)' (434 main.js). I updated 
-   pizza.html as a result of this change (109 & 126 in pizza.html). 
-3) As a result of the changes made to "function sizeSwitcher(size)" I updated style.css for each size.
-4) Utilized a technique by Paul Lewis (http://www.html5rocks.com/en/tutorials/speed/animations/) to rewrite
-   the scroll function.
-5) Removed the DOM access from the for loop in "function updatePositions()" to boost performance and avoid
-   triggering a unnecessary layouts.
+Modifications and Optimizations implemented to get the time to resize pizza's less than 5 ms:
+* Modified/Optimized Javascript, CSS and HTML to achieve the final result.
+* Replaced "randomPizzaContainer" (377 main.js) with "randomPizzaContainerMedium" (387 main.js) and created 
+  a corresponding class for each size within 'function sizeSwitcher(size)' (434 main.js). I updated 
+  pizza.html as a result of this change (109 & 126 in pizza.html). 
+* As a result of the changes made to "function sizeSwitcher(size)" I updated style.css for each size.
+* Utilized a technique by Paul Lewis (http://www.html5rocks.com/en/tutorials/speed/animations/) to rewrite
+  the scroll function.
+* Removed the DOM access from the for loop in "function updatePositions()" to boost performance and avoid
+  triggering a unnecessary layouts.
 
 Measures performance after the above changes and resizing pizzas is now at 0.46 ms.
 
