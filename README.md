@@ -31,7 +31,7 @@ Measured performance after making the above changes and they were - Mobile: 93/1
 
 ####Part Two: Optimize Frames per Second in pizza.html
 
-Measured the initial Frames Per Second which was between 20 - 30 fps.
+Measured the initial Frames Per Second which were between 20 - 30 fps.
 
 Modifications and Optimizations Implemented:
 * Added meta info to pizza.html.
