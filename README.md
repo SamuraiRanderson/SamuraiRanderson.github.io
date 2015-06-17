@@ -63,15 +63,15 @@ Measures performance after the above changes and resizing pizzas is now at 0.46 
 
 ####References used for this project include:
 
-[Udacity's Website Performance Optimization](https://www.udacity.com/course/website-performance-optimization--ud884)
-[Udacity's' Browser Rendering Optimization](https://www.udacity.com/course/browser-rendering-optimization--ud860)
-http://www.html5rocks.com/en/tutorials/speed/animations/
-http://www.webreference.com/programming/javascript/jkm3/index.html
-http://gent.ilcore.com/2011/03/how-not-to-trigger-layout-in-webkit.html
-https://developer.chrome.com/devtools/docs/network#resource-network-timing
-GitHub
-Udacity Office Hours
-https://github.com/0per8/Udacity-Project-4
-http://jscompress.com/
-Stack Overflow
+* [Udacity's Website Performance Optimization](https://www.udacity.com/course/website-performance-optimization--ud884)
+* [Udacity's' Browser Rendering Optimization](https://www.udacity.com/course/browser-rendering-optimization--ud860)
+* http://www.html5rocks.com/en/tutorials/speed/animations/
+* http://www.webreference.com/programming/javascript/jkm3/index.html
+* http://gent.ilcore.com/2011/03/how-not-to-trigger-layout-in-webkit.html
+* https://developer.chrome.com/devtools/docs/network#resource-network-timing
+* GitHub
+* Udacity Office Hours
+* https://github.com/0per8/Udacity-Project-4
+* http://jscompress.com/
+* Stack Overflow
 
