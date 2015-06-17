@@ -19,7 +19,7 @@ Below is an overview of the optimizations, modifications, and tests performed to
 
 Measured the initial Google PageSpeed Insight scores which were - Mobile: 26/100, Desktop: 29/100.
 
-Modifications and Optimizations Implemented:
+Modifications and Optimizations Implemented
 1. Removed Web Fonts.
 2. Added media query to print.css.
 3. Inlined style.css.
