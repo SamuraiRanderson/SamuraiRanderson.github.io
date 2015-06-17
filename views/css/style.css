@@ -1,4 +1,4 @@
-/** {
+** {
   outline: 1px solid red !important;
 }*/
 * {
@@ -8,8 +8,8 @@
 }
 
 body {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
   background: black;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 input {
@@ -29,52 +29,33 @@ form {
   font-weight: 800;
 }
 
-.img-responsive {
-  display: block;
-  height: auto;
-  max-width: 100%;
-}
-
 .mover {
-  position: fixed;
   height: 100px;
+  position: fixed;
+  transform: translateZ(0);
   width: 73.33px;
   z-index: -1;
-  transform: translateZ(0);
-}
-
-.randomPizzaContainer {
-  height: auto;
-  max-width: 100%;
-  float: left;
-  display: table;
 }
 
 .randomPizzaContainerSmall {
-  width: 25%;
-  height: 325px;
-  float: left;
   display: flex;
+  float: left;
+  height: 325px;
+  width: 25%;
 }
 
 .randomPizzaContainerMedium {
-  width: 33.33%;
-  height: 325px;
-  float: left;
   display: flex;
+  float: left;
+  height: 325px;
+  width: 33.33%;
 }
 
 .randomPizzaContainerLarge {
-  width: 50%;
-  height: 325px;
-  float: left;
   display: flex;
-}
-
-.randomPizzaContainer:after {
-  content: "";
-  display: table;
-  clear: both;
+  float: left;
+  height: 325px;
+  width: 50%;
 }
 
  .container {
