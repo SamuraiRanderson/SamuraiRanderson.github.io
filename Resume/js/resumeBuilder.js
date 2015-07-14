@@ -1,28 +1,25 @@
-var formattedName = HTMLheaderName.replace("%data%","Robert Anderson");
-
-var role = "Web Developer";
-var formattedRole = HTMLheaderRole.replace("%data%",role);
-
-$("#header").prepend(formattedRole);
-$("#header").prepend(formattedName);
-
 var bio = {
 	"name" : "Robert Anderson",
 	"role" : "Front End Web Developer",
-	"skills" : ["HTML5","CSS","JavaScript","jQuery", "KnockoutJS", "Git"],
+	"skills" : ["HTML5","CSS3","JavaScript","jQuery", "KnockoutJS", "Git", "Management"],
 	"contacts" : {
-		"mobile" : "214-385-1163",
+		"mobile" : "630-296-7536",
 		"email" : "robtanderson4@gmail.com",
 		"twitter" : "@ValhallaSamurai",
-		"github" : "https://github.com/SamuraiRanderson",
-		"linkedIn" : "www.linkedin.com/in/robertcanderson5",
+		"github" : "SamuraiRanderson",
+		"linkedIn" : "robertcanderson5",
 		"location" : "Dallas, TX",
 		"placesLived": "Denver, CO"
 	},
-	"welcomeMessage" : "Hi! Thanks for stopping by and checking out my résumé!",
+	// "welcomeMessage" : "Hi! Thanks for stopping by and checking out my résumé!",
+	"welcomeMessage" :'\"\When you\'re good at something you\'ll tell everyone. When you\'re great at something' +
+	' they\'ll tell you\"\ - Walter Payton',
 	"picture" : "images/skull.JPG"
 	};
 
+var formattedName = HTMLheaderName.replace("%data%","Robert Anderson");
+var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+	$("#header").prepend(formattedName + formattedRole);
 var formattedBioPic = HTMLbioPic.replace("%data%", bio.picture);
 	$("#header").append(formattedBioPic);
 var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
@@ -31,15 +28,15 @@ var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessag
 var formattedContactInfo = [];
 formattedContactInfo.push(HTMLemail.replace("%data%", bio.contacts.email));
 formattedContactInfo.push(HTMLmobile.replace("%data%",bio.contacts.mobile));
-//formattedContactInfo.push(HTMLgithub.replace("%data%", bio.contacts.github));
+formattedContactInfo.push(HTMLgithub.replace("%data%", bio.contacts.github));
 //formattedContactInfo.push(HTMLtwitter.replace("%data%", bio.contacts.twitter));
 formattedContactInfo.push(HTMLlinkedIn.replace("%data%",bio.contacts.linkedIn));
 formattedContactInfo.push(HTMLlocation.replace("%data%", bio.contacts.location));
 
-for(i in formattedContactInfo) {
-	$("#topContacts").append(formattedContactInfo[i]);
-	// $("#footerContacts").append(formattedContactInfo[i]);
-}
+ for(i in formattedContactInfo) {
+ 	$("#topContacts").append(formattedContactInfo[i]);
+// 	// $("#footerContacts").append(formattedContactInfo[i]);
+ }
 
 if (bio.skills.length > 0) {
 	$("#header").append(HTMLskillsStart);
@@ -55,6 +52,8 @@ if (bio.skills.length > 0) {
 	$("#skills").append(formattedSkill);
 		formattedSkill = HTMLskills.replace("%data%", bio.skills[5]);
 	$("#skills").append(formattedSkill);
+	formattedSkill = HTMLskills.replace("%data%", bio.skills[6]);
+	$("#skills").append(formattedSkill);
 }
 
 var summary = {
@@ -67,13 +66,13 @@ var summary = {
 		" these new skills to use creating some amazing web experiences in the near future, as well as learning even" +
 		" more about this ever changing field.<br><br>Throughout my professional career I have worn many hats, but through" +
 		" these roles I have been able to identify some consistent traits:<br><br>" +
-		"•  I gravitate towards challenging situations instead of running from them.<br>" +
+		"•  I gravitate towards challenging situations instead of running from them.<br><br>" +
 		"•  I work well as a part of a team, as well as independently, to achieve goals. It doesn't matter who gets the glory; it's about" +
-		"the team getting the win... and I love to win.<br>" +
+		"the team getting the win... and I love to win.<br><br>" +
 		"•  I have learned more from my failures than my successes. Everyone encounters difficult situations in their careers" +
-		"but only a few learn from these lessons.<br>" +
-		"•  I love to learn as well as develop those around me.<br>" +
-		"•  I have a knack for looking at things from a fresh perspective and figuring out how to bring new ideas from conception to execution.<br>" +
+		"but only a few learn from these lessons.<br><br>" +
+		"•  I love to learn as well as develop those around me.<br><br>" +
+		"•  I have a knack for looking at things from a fresh perspective and figuring out how to bring new ideas from conception to execution.<br><br>" +
 		"•  Where I possess a level of expertise at something, I become a willing teacher and share my knowledge with others. Where I am a novice, I become a student and seek out knowledge.<br><br>"
 
 
@@ -172,29 +171,29 @@ var work = {
 	}
 
 function displayWork () {
-for (job in work.jobs) {
-	$("#workExperience").append(HTMLworkStart);
-	var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
-	var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
-	var formattedEmployerTitle = formattedEmployer + formattedTitle;
+	for (job in work.jobs) {
+		$("#workExperience").append(HTMLworkStart);
+		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+		var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
+		var formattedEmployerTitle = formattedEmployer + formattedTitle;
 
-	$(".work-entry:last").append(formattedEmployerTitle);
+		$(".work-entry:last").append(formattedEmployerTitle);
 
-	var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
-	$(".work-entry:last").append(formattedLocation);
+		var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
+		$(".work-entry:last").append(formattedLocation);
 
-	var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
-	$(".work-entry:last").append(formattedDates);
+		var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
+		$(".work-entry:last").append(formattedDates);
 
-	var formattedUrl = HTMLworkURL.replace("%data%", work.jobs[job].url);
-	$(".work-entry:last").append(formattedUrl);
+		var formattedUrl = HTMLworkURL.replace("%data%", work.jobs[job].url);
+		$(".work-entry:last").append(formattedUrl);
 
-	var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
-	$(".work-entry:last").append(formattedDescription);
+		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
+		$(".work-entry:last").append(formattedDescription);
 
-	$(".work-entry:last").append("<br><div><hr class='section-hr'></div>");
+		$(".work-entry:last").append("<br><div><hr class='section-hr'></div>");
+		}
 	}
-}
 
 displayWork ();
 
@@ -306,6 +305,12 @@ var education = {
 		"title": "JavaScript Design Patterns",
 		"dates": "Completed June 2015",
 		"url": "https://www.udacity.com/course/ud989"
+	},
+	{
+		"school": "Udacity",
+		"title": "JavaScript Testing",
+		"dates": "Completed July 2015",
+		"url": "https://www.udacity.com/course/ud549"
 	}
     ]
 	}
@@ -330,20 +335,20 @@ function displayEducation () {
 			}
 
 	if(education.onlineCourses.length > 0) {
-			$("#education").append(HTMLonlineCourses);
-			for(i in education.onlineCourses) {
-				$("#education").append(HTMLschoolStart);
-				var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[i].title);
-				var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[i].school);
-				var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[i].dates);
-				var formattedOnlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[i].url);
+		$("#education").append(HTMLonlineCourses);
+		for(i in education.onlineCourses) {
+			$("#education").append(HTMLschoolStart);
+			var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[i].title);
+			var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[i].school);
+			var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[i].dates);
+			var formattedOnlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[i].url);
 
-				$(".education-entry:last").append(formattedOnlineTitle + formattedOnlineSchool);
-				$(".education-entry:last").append(formattedOnlineDates);
-				$(".education-entry:last").append(formattedOnlineURL);
-				$(".education-entry:last").append("<br><div><hr class='section-hr'></div>");
-			}
+			$(".education-entry:last").append(formattedOnlineTitle + formattedOnlineSchool);
+			$(".education-entry:last").append(formattedOnlineDates);
+			$(".education-entry:last").append(formattedOnlineURL);
+			$(".education-entry:last").append("<br><div><hr class='section-hr'></div>");
 		}
+	}
 	}
 
 displayEducation ();
@@ -355,7 +360,7 @@ var projects = {
 		"dates" : "2015",
 		"description" : "Take a design mockup as a PDF-file and replicate that design in HTML and CSS.",
 		"courses" : "Intro to HTML and CSS, Responsive Web Design Fundamentals, Responsive Images",
-		"images" : ["images/p1.png"]
+		"images" : ["images/b3.jpg"]
 	},
 	{
 		"title" : "Interactive Resume",
@@ -374,7 +379,10 @@ var projects = {
 	{
 		"title" : "Clasic Arcade Game Clone",
 		"dates" : "2015",
-		"description" : "Portfolio of work completed through Udacity's Front End Web Developer NanoDegree & personal projects.",
+		"description" : "In this, the third project of Udacity's Front End Web Developer Nanodegree program, I was provided with a game loop" +
+		" engine, and visual assets, with the task to create a video game based off the 1981 iconic video game \"Frogger\". I used HTML5 Canvas, CSS and JavaScript" +
+		" to build this project. I incorporated custom images, and features, to make the game more unique and express my creativity; creating a more" +
+		" pleasant user experience.",
 		"courses" : "Object-Oriented JavaScript, HTML5 Canvas",
 		"images" : ["images/b2.jpg"]
 
@@ -386,7 +394,7 @@ var projects = {
 		"that exist on a website that was provided to us. The main tasks were to achieve a Google PageSpeed Insights score of 90+ for index.html, " +
 		"achieving 60 Frames Per Second for pizza.html, and getting the pizza size animations on pizza.html to resize in under 5 ms.",
 		"courses" : "Website Performance Optimization, Browser Rendering Optimization",
-		"images" : ["images/pizza.jpg"]
+		"images" : ["images/pizza.png"]
 
 	}
 	]
