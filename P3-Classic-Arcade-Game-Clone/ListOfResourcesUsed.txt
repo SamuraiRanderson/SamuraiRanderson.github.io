@@ -1,0 +1,16 @@
+http://pngimg.com
+http://www.html5rocks.com
+http://www.w3schools.com
+http://www.google.com/fonts
+https://plus.google.com/u/0/events
+http://jlongster.com/Making-Sprite-based-Games-with-Canvas
+http://docs.racket-lang.org/teachpack/2htdpPlanet_Cute_Images.html
+https://github.com/AnjaliNanda/FroggerGame
+https://github.com/ontheplanet/project3
+http://stackoverflow.com/questions/2440377/javascript-collision-detection
+http://stackoverflow.com/questions/2696692/setinterval-vs-settimeout
+http://www.w3schools.com/js/js_timing.asp
+http://www.w3schools.com/jsref/met_win_setinterval.asp
+https://www.udacity.com/course/object-oriented-javascript--ud015
+https://www.udacity.com/course/html5-canvas--ud292
+
