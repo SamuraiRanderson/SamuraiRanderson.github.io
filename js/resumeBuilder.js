@@ -1,7 +1,7 @@
 var bio = {
 	"name" : "Robert Anderson",
 	"role" : "Front End Web Developer",
-	"skills" : ["HTML5","CSS3","JavaScript","jQuery", "Bootstrap", "Git / GitHub", "KnockoutJS"],
+	"skills" : ["HTML5","CSS3","JavaScript","jQuery","Bootstrap","Git / GitHub","KnockoutJS"],
 	"contacts" : {
 		"mobile" : "630-296-7536",
 		"email" : "robtanderson4@gmail.com",
