@@ -3,46 +3,46 @@
 
 var Model = [
           {name: 'Jimmy\'s Food Store', address_1: '4901 Bryan St', address_2: 'Dallas, TX 75206', phone: '(214) 823-6180', lat: 32.804476, lng:  -96.773658,
-          url: 'https://www.jimmysfoodstore.com', yelpId: 'jimmys-food-store-dallas',category: 'Eat'},
+          url: 'https://www.jimmysfoodstore.com', yelpId: 'jimmys-food-store-dallas'},
           {name: 'Dolly Python', address_1: '1916 N Haskell Ave', address_2: 'Dallas, TX 75204', phone: '(214) 887-3434', lat: 32.802272, lng: -96.785943,
-          url: 'http://www.dollypythonvintage.com', yelpId: 'dolly-python-dallas',category: 'Shop'},
+          url: 'http://www.dollypythonvintage.com', yelpId: 'dolly-python-dallas'},
           {name: 'The Samurai Collection', address_1: '2501 N Harwood St', address_2: 'Dallas, TX 75201', phone: '(214) 965-1032', lat: 32.791917, lng: -96.806217,
-          url: 'http://www.samuraicollection.org', yelpId: 'the-ann-and-gabriel-barbier-mueller-museum-the-samurai-collection-dallas', category: 'Learn'},
+          url: 'http://www.samuraicollection.org', yelpId: 'the-ann-and-gabriel-barbier-mueller-museum-the-samurai-collection-dallas'},
           {name: 'Pecan Lodge', address_1: '2702 Main St', address_2: 'Dallas, TX 75226', phone: '(214) 748-8900', lat: 32.783925, lng: -96.783820,
-          url: 'http://www.pecanlodge.com', yelpId: 'pecan-lodge-dallas-3', category: 'Eat'},
+          url: 'http://www.pecanlodge.com', yelpId: 'pecan-lodge-dallas-3'},
           {name: 'Smoke', address_1: '901 Fort Worth Ave', address_2: 'Dallas, TX 75208', phone: '(214) 393-4141', lat: 32.769605, lng:  -96.837312,
-          url: 'http://smokerestaurant.com', yelpId: 'smoke-dallas-2?osq=smoke', category: 'Eat'},
+          url: 'http://smokerestaurant.com', yelpId: 'smoke-dallas-2?osq=smoke'},
           {name: 'Dallas Museum of Art', address_1: '1717 N Harwood St', address_2: 'Dallas, TX 75201', phone: '(214) 922-1200', lat: 32.787814, lng: -96.800793,
-          url: 'https://www.dma.org', yelpId: 'dallas-museum-of-art-dallas', category: 'Learn'},
+          url: 'https://www.dma.org', yelpId: 'dallas-museum-of-art-dallas'},
           {name: 'Double Wide Bar', address_1: '3510 Commerce St', address_2: 'Dallas, TX 75226', phone: '(214) 887-6510', lat: 32.784991, lng: -96.772994,
-          url: 'http://www.double-wide.com', yelpId: 'double-wide-dallas',category: 'Drink'},
+          url: 'http://www.double-wide.com', yelpId: 'double-wide-dallas'},
           {name: 'Torchy\'s Tacos', address_1: '5600 SMU Boulevard', address_2: 'Dallas, TX 75206', phone: '(972) 993-8226', lat: 32.842145, lng: -96.771354,
-          url: 'http://torchystacos.com/location/smu', yelpId: 'torchys-tacos-dallas-2?osq=torchy%27s+atcos+smu', category: 'Eat'},
+          url: 'http://torchystacos.com/location/smu', yelpId: 'torchys-tacos-dallas-2?osq=torchy%27s+atcos+smu'},
           {name: 'Perot Museum of Nature and Science', address_1: '3510 Commerce St', address_2: 'Dallas, TX 75226', phone: '(214) 887-6510', lat: 32.787153, lng:  -96.806644,
-          url: 'http://www.perotmuseum.org', yelpId: 'perot-museum-of-nature-and-science-dallas-2', category: 'Learn'},
+          url: 'http://www.perotmuseum.org', yelpId: 'perot-museum-of-nature-and-science-dallas-2'},
           {name: 'Luscher\'s Red Hots', address_1: '2653 Commerce St', address_2: 'Dallas, TX 75226', phone: '(214) 434-1006', lat: 32.783485, lng: -96.784181,
-          url: 'http://www.luschers.com', yelpId: 'luschers-red-hots-dallas', category: 'Eat'},
+          url: 'http://www.luschers.com', yelpId: 'luschers-red-hots-dallas'},
           {name: 'Pizza Lounge', address_1: '841 Exposition Ave', address_2: 'Dallas, TX 75226', phone: '(214) 887-6900', lat: 32.782527, lng: -96.766595,
-          url: 'http://www.pizzaloungedallas.com', yelpId: 'pizza-lounge-dallas?osq=Pizza+Lounge', category: 'Eat'},
+          url: 'http://www.pizzaloungedallas.com', yelpId: 'pizza-lounge-dallas?osq=Pizza+Lounge'},
           {name: 'Oddfellows', address_1: '316 W 7th St', address_2: 'Dallas, TX 75208', phone: '(214) 944-5958', lat: 32.748872, lng: -96.826812,
-          url: 'http://oddfellowsdallas.com', yelpId: 'oddfellows-dallas', category: 'Eat'},
+          url: 'http://oddfellowsdallas.com', yelpId: 'oddfellows-dallas'},
           {name: 'We are 1976', address_1: '313 N Bishop Ave', address_2: 'Dallas, TX 75208', phone: '(214) 821-1976', lat: 32.748334, lng: -96.829321,
-          url: 'http://www.weare1976.com', yelpId: 'we-are-1976-dallas-2', category: 'Shop'},
+          url: 'http://www.weare1976.com', yelpId: 'we-are-1976-dallas-2'},
           {name: 'The Magnolia', address_1: '3699 McKinney Ave #100', address_2: 'Dallas, TX 75204', phone: '(214) 520-0394', lat: 32.808131, lng: -96.797955,
-          url: 'http://www.landmarktheatres.com/dallas/the-magnolia', yelpId: 'landmarks-magnolia-theater-dallas', category: 'Learn'},
+          url: 'http://www.landmarktheatres.com/dallas/the-magnolia', yelpId: 'landmarks-magnolia-theater-dallas'},
           {name: 'Barcadia', address_1: '1917 N Henderson Ave', address_2: 'Dallas, TX 75206', phone: '(214) 821-7300', lat: 32.811954, lng: -96.775115,
-          url: 'http://barcadiabars.com/barcadiadallas', yelpId: 'barcadia-dallas', category: 'Drink'},
+          url: 'http://barcadiabars.com/barcadiadallas', yelpId: 'barcadia-dallas',},
           {name: 'The Old Monk', address_1: '2847 N Henderson Ave', address_2: 'Dallas, TX 75206', phone: '(214) 821-1880', lat: 32.820336, lng: -96.784939,
-          url: 'http://www.oldmonkdallas.com', yelpId: 'the-old-monk-dallas', category: 'Drink'},
+          url: 'http://www.oldmonkdallas.com', yelpId: 'the-old-monk-dallas'},
           {name: 'The Joule', address_1: '1530 Main St', address_2: 'Dallas, TX 75201', phone: '(214) 748-1300', lat: 32.780980, lng: -96.798352,
-          url: 'http://www.thejouledallas.com', yelpId: 'the-joule-dallas-dallas-2', category: 'Stay'},
+          url: 'http://www.thejouledallas.com', yelpId: 'the-joule-dallas-dallas-2'},
           {name: 'Omni Dallas Hotel', address_1: '555 S Lamar', address_2: 'Dallas, TX 75202', phone: '(214) 744-6664', lat: 32.775559, lng: -96.804319,
-          url: 'http://www.omnihotels.com/hotels/dallas', yelpId: 'omni-dallas-hotel-dallas-2', category: 'Stay'},
+          url: 'http://www.omnihotels.com/hotels/dallas', yelpId: 'omni-dallas-hotel-dallas-2'},
           {name: 'Elbow Room', address_1: '3010 Gaston Ave', address_2: 'Dallas, TX 75226', phone: '(214) 828-9488', lat: 32.788590, lng: -96.783126,
-          url: 'http://elbowroomdallas.com', yelpId: 'the-elbow-room-dallas', category: 'Eat'}
+          url: 'http://elbowroomdallas.com', yelpId: 'the-elbow-room-dallas'}
 ];
 
-var P = function(data) {
+var Venue = function(data) {
      "use strict";
      var self = this;
      self.name = ko.observable(data.name);
@@ -52,7 +52,6 @@ var P = function(data) {
      self.lat = ko.observable(data.lat);
      self.lng = ko.observable(data.lng);
      self.url = ko.observable(data.url);
-     self.category = ko.observable(data.category);
      self.marker = ko.observable();
 };
 
@@ -63,13 +62,9 @@ var ViewModel = function () {
 // ** self.placeList is an empty array that is populated thr placeItem ** //
 // ** function that is pushed from the model variable array ** //
 
-     self.placeList = ko.observableArray([]);
-     self.query = ko.observable('');
+     self.venueList = ko.observableArray([]);
 
-     Model.forEach(function(placeItem){
-          self.placeList.push(new P (placeItem));
-     });
-
+     console.log(self.venueList()[i]);
 // ** Establish current marker ** //
 
      Model.currentMarker = ko.observable();
@@ -90,6 +85,7 @@ var ViewModel = function () {
 
                });
 
+          self.venueList.push(marker);
 // ** Initialize the Google Maps InfoWindow for display, when needed. ** //
 
      var infoWindow = new google.maps.InfoWindow();
@@ -105,6 +101,7 @@ var ViewModel = function () {
      infoWindow.setContent('<h2>' + m.title + '</h2>' + '<br>' +
           m.address_1 + '<br>' + m.address_2 + '<br>' + m.phone + '</br>' +
           '<a href=' + m.url + '>' + m.url + '</a>');
+     //setMarkersVisible(map, null);
      infoWindow.open(map, m);
 
 // ** Sets the marker in motion by checking it's status and animating it if it's idle. ** //
@@ -138,6 +135,7 @@ var ViewModel = function () {
 // ** capitialized. **//
 
           var str = $('#filter').val();
+
           str = str.toLowerCase().replace(/\b[a-z]/g, function(self) {
                return self.toUpperCase();
           }),
@@ -148,7 +146,13 @@ var ViewModel = function () {
                $(this).text().search(str) > -1 ? $(this).show() : $(this).hide();
           });
 
+          for(var i = 0; i < self.venueList().length; i++){
+          self.venueList()[i].setMap(self.venueList()[i].title.search(str) > -1 ? map : null);
+          }
+
      };
+
+     console.log(self.venueList()[i]);
 
 // ** Add locations from array to the place list and the mobile dropdown-menu ** //
 //
@@ -158,18 +162,21 @@ var ViewModel = function () {
 
 // ** locations added to #uiList ** //
 
-     $('#uiList .locList').append('<li><a>' + Model[i].name + '</a></li>');
+          $('#uiList .locList').append('<li><a>' + Model[i].name + '<br>'
+               + Model[i].address_1 + '<br>' + Model[i].address_2 + '<br>'
+               + Model[i].phone + '<br>' + '</a></li>');
 
 // ** 'click' binding for list ** //
 
-     $('#uiList .locList li a').last().bind('click', function(m) {
-        return function () {
-          displayInfoAndBounce(m);
-          stopAnimation(m);
-        };
-     }(marker));
+          $('#uiList .locList li a').last().bind('click', function(m) {
+               return function () {
+                    displayInfoAndBounce(m);
+                    stopAnimation(m);
+               };
 
-// ** Bind the click events for each map marker with the panMapAndDisplayInfoAndBounce()function. ** //
+          }(marker));
+
+// ** Bind the click events for each map marker with the displayInfoAndBounce()function. ** //
 // ** We pass the Google Maps marker as a parameter to the function, so it knows where to move the map, ** //
 // ** what info to show, and identifies the marker to animate ** //
 
@@ -179,7 +186,6 @@ var ViewModel = function () {
           });
 
      }
-
 };
 
 
