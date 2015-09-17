@@ -5,7 +5,7 @@ var bio = {
 	"skills" : ["HTML5","CSS3","JavaScript","jQuery","Bootstrap","Git / GitHub","KnockoutJS"],
 	"contacts" : {
 		"mobile" : "469-343-4258",
-		"email" : "robtanderson4@gmail.com",
+		"email" : "robertanderson5@protonmail.com",
 		"twitter" : "@ValhallaSamurai",
 		"github" : "SamuraiRanderson",
 		"linkedIn" : "robertcanderson5",
