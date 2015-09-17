@@ -3,8 +3,8 @@ var HTMLheaderRole = '<span id="role">%data%</span><hr/>';
 //var HTMLheaderImage = '<img src=%data% class="HTMLheaderImage">';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="contact-text">%data%</span></li>';
-var HTMLmobile = '<li class="flex-item"><a href="tel:+1-469-343-4258"><i class="fa fa-mobile-phone fa-2x"></i><span class="contact-text">%data%</span></a></li>';
-var HTMLemail = '<li class="flex-item"><a href="mailTo:HowdyMrAnderson@gmail.com?subject=Hello"><i class="fa fa-envelope fa-2x"><span class="contact-text">%data%</span></a></li>';
+var HTMLmobile = '<li class="flex-item"><a href="tel:+1-214-385-1163"><i class="fa fa-mobile-phone fa-2x"></i><span class="contact-text">%data%</span></a></li>';
+var HTMLemail = '<li class="flex-item"><a href="mailTo:robertanderson5@protonmail.com?subject=Hello"><i class="fa fa-envelope fa-2x"><span class="contact-text">%data%</span></a></li>';
 //var HTMLtwitter = '<li class="flex-item"><span class="orange-text">twitter</span><span class="white-text">%data%</span></li>';
 var HTMLgithub = '<li class="flex-item"><a href="https://github.com/SamuraiRanderson" target="_blank"><i class="fa fa-github-alt fa-2x"><span class="contact-text">%data%</span></a></li>';
 //var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span><span class="white-text">%data%</span></li>';
