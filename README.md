@@ -2,11 +2,15 @@
 
 #####Interactive Resume
 
-Looking for a web developer? You can take a look at my projects below and click [here](http://samurairanderson.github.io.) to view my resume!<br> My repository for this project can be viewed [here](https://github.com/SamuraiRanderson/Resume).
+Looking for a web developer? You can take a look at my projects below and click [here](http://samurairanderson.github.io.) to view my resume!
+
+My repository for this project can be viewed [here](https://github.com/SamuraiRanderson/Resume).
 
 #####Neighborhood Map
 
-If you happen to be in Dallas and get a craving for some great food, or want to spend the day experiencing some amazing works of art, you can find some great places for both [here](http://samurairanderson.github.io/Neighborhood-Map). This is a single page application that utilizes the Google Maps API, and Instagram's API, to showcases some fantastic locations in Dallas, TX.<br> The GitHub repository for this project is located [here](https://github.com/SamuraiRanderson/Neighborhood-Map). 
+If you happen to be in Dallas and get a craving for some great food, or want to spend the day experiencing some amazing works of art, you can find some great places for both [here](http://samurairanderson.github.io/Neighborhood-Map). This is a single page application that utilizes the Google Maps API, and Instagram's API, to showcases some fantastic locations in Dallas, TX.
+
+The GitHub repository for this project is located [here](https://github.com/SamuraiRanderson/Neighborhood-Map). 
 
 #####Website Optimization
 
