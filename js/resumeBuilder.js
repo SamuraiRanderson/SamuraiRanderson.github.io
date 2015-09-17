@@ -1,9 +1,10 @@
+// window.performance.mark("mark_start_bio"); // Start User Timing API function
 var bio = {
 	"name" : "Robert Anderson",
 	"role" : "Front End Web Developer",
 	"skills" : ["HTML5","CSS3","JavaScript","jQuery","Bootstrap","Git / GitHub","KnockoutJS"],
 	"contacts" : {
-		"mobile" : "630-296-7536",
+		"mobile" : "469-343-4258",
 		"email" : "robtanderson4@gmail.com",
 		"twitter" : "@ValhallaSamurai",
 		"github" : "SamuraiRanderson",
@@ -11,13 +12,11 @@ var bio = {
 		"location" : "Dallas, TX",
 		"placesLived": "Denver, CO"
 	},
-	// "welcomeMessage" : "Hi! Thanks for stopping by and checking out my résumé!",
-	"welcomeMessage" :'\"\When you\'re good at something you\'ll tell everyone. When you\'re great at something' +
-	' they\'ll tell you\"\ - Walter Payton',
-	"picture" : "images/skull.JPG"
+	"welcomeMessage" : "Hi! Thanks for stopping by and checking out my résumé!",
+	"picture" : "images/resume-profile_mini.jpg",
 	};
 
-var formattedName = HTMLheaderName.replace("%data%","Robert Anderson");
+var formattedName = HTMLheaderName.replace("%data%", bio.name);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 	$("#header").prepend(formattedName + formattedRole);
 var formattedBioPic = HTMLbioPic.replace("%data%", bio.picture);
@@ -56,6 +55,11 @@ if (bio.skills.length > 0) {
 	$("#skills").append(formattedSkill);
 }
 
+// window.performance.mark("mark_end_bio");
+// window.performance.mark("measure_bio", "mark_start_bio", "mark_end_bio");
+// var timeToBio = window.performance.getEntriesByName("measure_bio");
+// console.log("Time to load bio: " + timeToBio[0].duration + "ms");
+
 var summary = {
 
 
@@ -68,9 +72,9 @@ var summary = {
 		" these roles I have been able to identify some consistent traits:<br><br>" +
 		"•  I gravitate towards challenging situations instead of running from them.<br><br>" +
 		"•  I work well as a part of a team, as well as independently, to achieve goals. It doesn't matter who gets the glory; it's about" +
-		"the team getting the win... and I love to win.<br><br>" +
+		" the team getting the win... and I love to win.<br><br>" +
 		"•  I have learned more from my failures than my successes. Everyone encounters difficult situations in their careers" +
-		"but only a few learn from these lessons.<br><br>" +
+		" but only a few learn from these lessons.<br><br>" +
 		"•  I love to learn as well as develop those around me.<br><br>" +
 		"•  I have a knack for looking at things from a fresh perspective and figuring out how to bring new ideas from conception to execution.<br><br>" +
 		"•  Where I possess a level of expertise at something, I become a willing teacher and share my knowledge with others. Where I am a novice, I become a student and seek out knowledge.<br><br>"
@@ -86,6 +90,8 @@ function displaySummary () {
 
 
 displaySummary();
+
+// window.performance.mark("mark_start_work"); //  Start User Timing API function
 
 var work = {
     "jobs": [
@@ -103,7 +109,7 @@ var work = {
 			"<br><br> •  Leading, managing and developing 30 members of the Houston team." +
 			"<br> •  Creating a new market segment focused sales team within the market." +
 			"<br> •  Implementing major product conversions into the market to increase profitability while reducing inventory." +
-			"These implementations resulted in an overnight boost to our bottom line." +
+			" These implementations resulted in an overnight boost to our bottom line." +
 			"<br> •  Working closely with Legal to create profitable multi-year contract agreements with Home Builders and act as a liaison during negotiations." +
 			"<br> •  Creating P&L statements to analyze existing, and prospective, customers to ensure profitable decisions were being made in the marketplace." +
 			"<br> •  Championing performing members of our organization, and coaching underperforming members, to maximize employee engagement." +
@@ -115,13 +121,13 @@ var work = {
             "location": "Dallas, TX",
             "dates": "2011 - 2013",
             "url": "http://corporate.ppg.com/Home.aspx",
-            "description": ["Promoted to Business Development Manger in PPG’s Dallas / Fort Worth market overseeing the New Home Construction business segment." +
-            "Worked closely with strategic Paint Contractors, Account Development Managers, Regional Sales Managers, Zone Managers and the National Sales Manager" +
-            "to develop, and implement, profitable sales proposals with New Home Construction Builders throughout DFW. I called on the corporate offices of Home Builders," +
-            "and worked with builder personnel and contractors in the field, to build strong relationships, act as a technical advisor as well as value sell PPG" +
-            "in a very competitive marketplace. <br><br>" +
+             "description": ["Promoted to Business Development Manger in PPG’s Dallas / Fort Worth market overseeing the New Home Construction business segment." +
+            " Worked closely with strategic Paint Contractors, Account Development Managers, Regional Sales Managers, Zone Managers and the National Sales Manager" +
+            " to develop, and implement, profitable sales proposals with New Home Construction Builders throughout DFW. I called on the corporate offices of Home Builders," +
+            " and worked with builder personnel and contractors in the field, to build strong relationships, act as a technical advisor as well as value sell PPG" +
+            " in a very competitive marketplace. <br><br>" +
 			"•  Elected to PPG Architectural Leadership Summit 2011/2012.  This involved being seen as a leader within your market, and nominated by PPG Senior Management" +
-			"into a class of 30 out of approximately 5,000 eligible employees.<br><br>"]
+			" into a class of 30 out of approximately 5,000 eligible employees.<br><br>"]
 
         },
         {
@@ -131,10 +137,10 @@ var work = {
             "dates": "2010 - 2011",
             "url": "http://corporate.ppg.com/Home.aspx",
             "description": ["Promoted from Sales Service Representative to Account Development Manager in PPG's Dallas / Fort Worth market managing a high volume portfolio" +
-            "of Multi-Family business. I was assigned a key strategic account within the market who had a reputation of being difficult to manage. I resolved all existing" +
-            "complaints with this customer, identifed some areas we could improve on as an organization to reduce further complaints and built a strong relationship with" +
-            "this customer by establishing trust and becoming a trusted advisor to their business. These processes allowed us to supply them on future projects and exhibited" +
-            "a level commitment to our customers in the marketplace.<br><br>"]
+            " of Multi-Family business. I was assigned a key strategic account within the market who had a reputation of being difficult to manage. I resolved all existing" +
+            " complaints with this customer, identified some areas we could improve on as an organization to reduce further complaints and built a strong relationship with" +
+            " this customer by establishing trust and becoming a trusted advisor to their business. These processes allowed us to supply them on future projects and exhibited" +
+            " a level of commitment to our customers in the marketplace.<br><br>"]
 
         },
         {
@@ -144,9 +150,9 @@ var work = {
             "dates": "2009 - 2010",
             "url": "http://corporate.ppg.com/Home.aspx",
             "description": ["Managed a Multi-Family Maintenance territory that consisted of 200 accounts throughout PPG's Dallas / Fort Worth market." +
-            "I was able to grow my territory by opening new accounts, providing exceptional customer service to my existing customers, value selling PPG" +
-            "as a business partnership. I was also able to increase sales and PC by selling the right products, at the right price, to meet my customers" +
-            "expectations.<br><br>" +
+            " I was able to grow my territory by opening new accounts, providing exceptional customer service to my existing customers, value selling PPG" +
+            " as a business partnership. I was also able to increase sales and PC by selling the right products, at the right price, to meet my customers" +
+            " expectations.<br><br>" +
 			"•	Awarded the STAR award at PPG Architectural University in 2009. Top of the class for 2009 – voted on by my 40 classmates.<br><br>"]
 
         },
@@ -155,17 +161,17 @@ var work = {
             "title": "Account Manger",
             "location": "Dallas TX",
             "dates": "1999 - 2008",
-            "url": "http: //www.graco.com/us/en.html",
+            "url": "http://www.graco.com/us/en.html",
             "description": ["Managed, maintained and developed a $6.5MM territory of 300 Graco distributor accounts in North Texas – Geographically covering an area from" +
-            "Western Louisiana, Northern Texas and Eastern New Mexico. I called on on the corporate offices of our distributors, and all of their locations, building strong" +
-            "relationships with all levels of their organization to solidify business within my territory and value selling Graco products as superior to their competition." +
-            "I also conducted safety trainings, product demonstrations, job site start ups, represented Graco at trade shows and created inventory stocking guidelines for distributors" +
-            "to ensure their inventory aligned with their sales and planned promotions.<br>" +
+            " Western Louisiana, Northern Texas and Eastern New Mexico. I called on on the corporate offices of our distributors, and all of their locations, building strong" +
+            " relationships with all levels of their organization to solidify business within my territory and value selling Graco products as superior to their competition." +
+            " I also conducted safety trainings, product demonstrations, job site start ups, represented Graco at trade shows and created inventory stocking guidelines for distributors" +
+            " to ensure their inventory aligned with their sales and planned promotions.<br>" +
 			"<br>•	Awarded Presidents Club four times for outstanding sales growth." +
 			"<br>•	Managed a $6.5MM territory and increased key account growth by 48% while growing market share to 70% within the Dallas / Fort Worth Metroplex." +
 			"<br>•	Increased new developmental markets 288% by working with distributors to identify key untapped market segments in their area." +
-			"<br>•	Created a inventory matrix of recommended Graco inventory to be stocked by our distributors, aligning their inventory with their sales, which" +
-			"increased distributors sales while reducing inventory.<br><br>"]
+			"<br>•	Created an inventory matrix of recommended Graco inventory to be stocked by our distributors, aligning their inventory with their sales, which" +
+			" increased distributors sales while reducing inventory.<br><br>"]
         }
     ]
 	}
@@ -174,6 +180,7 @@ function displayWork () {
 	for (job in work.jobs) {
 		$("#workExperience").append(HTMLworkStart);
 		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+		formattedEmployer = formattedEmployer.replace("%url%", work.jobs[job].url);
 		var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
 		var formattedEmployerTitle = formattedEmployer + formattedTitle;
 
@@ -185,8 +192,8 @@ function displayWork () {
 		var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
 		$(".work-entry:last").append(formattedDates);
 
-		var formattedUrl = HTMLworkURL.replace("%data%", work.jobs[job].url);
-		$(".work-entry:last").append(formattedUrl);
+		// var formattedUrl = HTMLworkURL.replace("%data%", work.jobs[job].url);
+		// $(".work-entry:last").append(formattedUrl);
 
 		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
 		$(".work-entry:last").append(formattedDescription);
@@ -197,10 +204,17 @@ function displayWork () {
 
 displayWork ();
 
+// window.performance.mark("mark_end_work"); // End User Timing API function
+// window.performance.mark("measure_work", "mark_start_work", "mark_end_work");
+// var timeToWork = window.performance.getEntriesByName("measure_work");
+// console.log("Time to load work: " + timeToWork[0].duration + "ms");
+
+// window.performance.mark("mark_start_education");
+
 var education = {
 	"schools": [
 	{
-		"name" : "Udcaity",
+		"name" : "Udacity",
 		"location" : "Mountain View, CA, US",
 		"dates" : "2014 - 2015",
 		"url" : "https://www.udacity.com",
@@ -296,19 +310,19 @@ var education = {
 	},
 	{
 		"school": "Udacity",
-		"title": "Intro to AJAX",
+		"title": "Intro to AJAX: Making Asynchronous Requests with jQuery",
 		"dates": "Completed June 2015",
 		"url": "https://www.udacity.com/course/ud110"
 	},
 	{
 		"school": "Udacity",
-		"title": "JavaScript Design Patterns",
+		"title": "JavaScript Design Patterns: Organizing Code in a Disorganized World",
 		"dates": "Completed June 2015",
 		"url": "https://www.udacity.com/course/ud989"
 	},
 	{
 		"school": "Udacity",
-		"title": "JavaScript Testing",
+		"title": "JavaScript Testing: Developing Apps with Confidence",
 		"dates": "Completed July 2015",
 		"url": "https://www.udacity.com/course/ud549"
 	}
@@ -319,16 +333,17 @@ function displayEducation () {
 	for (school in education.schools) {
 		$("#education").append(HTMLschoolStart);
 		var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
+		formattedName = formattedName.replace("%url%", education.schools[school].url);
 		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
 		var formattedNameLocation = formattedName + formattedLocation;
 		var formattedSchoolDate = HTMLschoolDates.replace("%data%", education.schools[school].dates);
-		var formattedSchoolURL = HTMLschoolURL.replace("%data%", education.schools[school].url);
+		// var formattedSchoolURL = HTMLschoolURL.replace("%data%", education.schools[school].url);
 		var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
 
 
 		$(".education-entry:last").append(formattedNameLocation);
 		$(".education-entry:last").append(formattedSchoolDate);
-		$(".education-entry:last").append(formattedSchoolURL);
+		// $(".education-entry:last").append(formattedSchoolURL);
 		$(".education-entry:last").append(formattedMajor);
 		$(".education-entry:last").append("<br><div><hr class='section-hr'></div>");
 
@@ -339,13 +354,14 @@ function displayEducation () {
 		for(i in education.onlineCourses) {
 			$("#education").append(HTMLschoolStart);
 			var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[i].title);
+			formattedOnlineTitle = formattedOnlineTitle.replace("%url%", education.onlineCourses[i].url);
 			var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[i].school);
 			var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[i].dates);
-			var formattedOnlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[i].url);
+			// var formattedOnlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[i].url);
 
 			$(".education-entry:last").append(formattedOnlineTitle + formattedOnlineSchool);
 			$(".education-entry:last").append(formattedOnlineDates);
-			$(".education-entry:last").append(formattedOnlineURL);
+			// $(".education-entry:last").append(formattedOnlineURL);
 			$(".education-entry:last").append("<br><div><hr class='section-hr'></div>");
 		}
 	}
@@ -353,49 +369,103 @@ function displayEducation () {
 
 displayEducation ();
 
+// window.performance.mark("mark_end_education");
+// window.performance.measure("measure_education", "mark_start_education", "mark_end_education");
+// var timeToEducation = window.performance.getEntriesByName("measure_education");
+// console.log("Time to load education: " + timeToEducation[0].duration + "ms");
+
+// window.performance.mark("mark_start_projects"); // Start User Timing API function
+
 var projects = {
 	"projects": [
-	{
-		"title" : "Mockup to Website",
-		"dates" : "2015",
-		"description" : "Take a design mockup as a PDF-file and replicate that design in HTML and CSS.",
-		"courses" : "Intro to HTML and CSS, Responsive Web Design Fundamentals, Responsive Images",
-		"images" : ["images/b3.jpg"]
-	},
-	{
-		"title" : "Interactive Resume",
-		"dates" : "2015",
-		"description" : "Built an Interactive Resume showcasing knowledge of HTML, CSS and JavaScript.",
-		"courses" : "JavaScript Basics, Intro to jQuery",
-		"images" : ["images/b1.jpg"]
-	},
-	{
-		"title" : "Portfolio",
-		"dates" : "2015",
-		"description" : "Portfolio of work completed through Udacity's Front End Web Developer NanoDegree & personal projects.",
-		"courses" : "Front End NanoDegree",
-		"images" : ["images/s1.svg"]
-	},
-	{
-		"title" : "Clasic Arcade Game Clone",
-		"dates" : "2015",
-		"description" : "In this, the third project of Udacity's Front End Web Developer Nanodegree program, I was provided with a game loop" +
-		" engine, and visual assets, with the task to create a video game based off the 1981 iconic video game \"Frogger\". I used HTML5 Canvas, CSS and JavaScript" +
-		" to build this project. I incorporated custom images, and features, to make the game more unique and express my creativity; creating a more" +
-		" pleasant user experience.",
-		"courses" : "Object-Oriented JavaScript, HTML5 Canvas",
-		"images" : ["images/b2.jpg"]
 
+	{
+		"title" : "Feed Reader Testing",
+		"dates" : "Current Project: 2015",
+		"description" : "This project focuses on 'test driven development' using a web-based application that reads RSS feeds. This was accomplished" +
+		" using Jasmine to write a number of tests against a pre-existing application to test the underlying business logic of the application, event handling," +
+		" and DOM manipulation. The practice of scripting well written tests gives us the ability to analyze whether new code introduced to a program will" +
+		" break the existing functionality without having to manually test all aspects of the code.",
+		"courses" : "JavaScript Testing: Developing Apps with Confidence - Udacity",
+		"images" : ["images/jasmine_1.jpg"],
+		"url" : ["http://samurairanderson.github.io."]
+	},
+	{
+		"title" : "Neighborhood Map Project",
+		"dates" : "Current Project: 2015",
+		"description" : "Developing a single page web application that incorporates Google Maps APIs, KnockoutJS and a third party API to showcase" +
+		" locations throughout Dallas, TX.",
+		"courses" : "JavaScript Testing: Developing Apps with Confidence - Udacity",
+		"images" : ["images/Map_Holder.jpg"],
+		"url" : ["http://samurairanderson.github.io."]
 	},
 	{
 		"title" : "Website Performance Optimization",
 		"dates" : "2015",
 		"description" : "In this project our cohort was assigned the challenge of tackling, and correcting, some performance-related issues " +
 		"that exist on a website that was provided to us. The main tasks were to achieve a Google PageSpeed Insights score of 90+ for index.html, " +
-		"achieving 60 Frames Per Second for pizza.html, and getting the pizza size animations on pizza.html to resize in under 5 ms.",
+		"achieving 60 Frames Per Second for pizza.html, and getting the pizza size animations on pizza.html to resize in under 5 ms.<br><br>" +
+		"The initial Google PageSpeed Insight scores for the site were - Mobile: 26/100, Desktop: 29/100, and using Google Dev Tools I measured" +
+		" the Frames Per Second between 20 - 30 FPS and 83.33ms to resize the animations.  The performance modifications, and optimizations, that I" +
+		" implemented spiked performance to - Mobile: 93/100, Desktop: 95/100 and enabled the site to run at 60 FPS and the animations were able to resize" +
+		" in under 5ms.",
 		"courses" : "Website Performance Optimization, Browser Rendering Optimization",
-		"images" : ["images/pizza.png"]
+		"images" : ["images/p4.jpg"],
+		"url" : ["https://github.com/SamuraiRanderson/P4-Website-Optimization/blob/master/README.md"]
 
+	},
+	{
+		"title" : "Classic Arcade Game Clone",
+		"dates" : "2015",
+		"description" : "In this, the third project of Udacity's Front End Web Developer Nanodegree program, I was provided with a game loop" +
+		" engine, and visual assets, with the task to create a video game based off the 1981 iconic video game \"Frogger\". I used HTML5 Canvas, CSS and JavaScript" +
+		" to build this project. I incorporated custom images, and features, to make the game more unique and express my creativity; creating a more" +
+		" pleasant user experience.",
+		"courses" : "Object-Oriented JavaScript, HTML5 Canvas",
+		"images" : ["images/p3.png"],
+		"url" : ["http://samurairanderson.github.io/P3-Classic-Arcade-Game-Clone"]
+	},
+	{
+		"title" : "Interactive Resume",
+		"dates" : "2015",
+		"description" : "This was the second project as part of Udacity's Front End Web Developer Nanodegree." +
+		" I was tasked to create a online interactive resume and required to write clean code and to apply my" +
+		" knowledge of variables, objects, JSON, functions and control flow. I used HTML5, CSS, JavaScript and" +
+		" jQuery to create a resume which included images, links and incorporated Google Maps API into the final project." +
+		" This was an excellent project to showcase the power of jQuery and how to use it to manipulate the DOM.",
+		"courses" : "JavaScript Basics, Intro to jQuery",
+		"images" : ["images/p2.jpg"],
+		"url" : ["http://samurairanderson.github.io."]
+	},
+	{
+		"title" : "Move Planner Application",
+		"dates" : "2015",
+		"description" : "The Move Planner Application is a web based app that is designed to help people who are looking to move. The heart of this project" +
+		" focuses on using APIs to access a data available to make this web based application functional. The Move Planner App queries Google Streetview," +
+		" Wikipedia and the New York Times APIs to provide images, relevant information and articles for the address the user inputs to help them research" +
+		" a new neighborhood. Asynchronous JavaScript requests (using jQuery’s AJAX functionality) were used to make ensure a smooth user experience" +
+		" allowing the application to interact with server-side APIs without forcing reloads, script pausing or disrupting UI rendering.",
+		"courses" : "Intro to AJAX: Making Asynchronous Requests with jQuery",
+		"images" : ["images/Move_Planner.jpg"],
+		"url" : ["http://samurairanderson.github.io/Move-Planner-App"]
+	},
+	{
+		"title" : "Portfolio",
+		"dates" : "2015",
+		"description" : "Portfolio of work completed through Udacity's Front End Web Developer NanoDegree & personal projects.",
+		"courses" : "Front End NanoDegree",
+		"images" : ["images/portfolio.jpg"],
+		"url" : ["http://samurairanderson.github.io."]
+	},
+	{
+		"title" : "Mockup to Website",
+		"dates" : "2015",
+		"description" : "This was the first project as part of Udacity's Front End Web Developer Nanodegree." +
+		" I was provided with a design mockup PDF-file and had to replicate that design using HTML and CSS." +
+		" The final submission of this project had to have less than an 8% margin of error.",
+		"courses" : "Intro to HTML and CSS, Responsive Web Design Fundamentals, Responsive Images",
+		"images" : ["images/p1.png"],
+		"url" : ["http://samurairanderson.github.io/P1-Mockup-to-Website"]
 	}
 	]
 	}
@@ -405,6 +475,7 @@ projects.display = function() {
 			$("#projects").append(HTMLprojectStart);
 
 			var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
+			formattedProjectTitle = formattedProjectTitle.replace("%url%", projects.projects[project].url);
 			var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
 			var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
 			//var formattedProjectCourses = HTMLprojectCourses.replace("%data%", projects.projects[project].courses);
@@ -426,6 +497,11 @@ projects.display = function() {
 
 projects.display();
 
+// window.performance.mark("mark_end_projects"); // End User Timing API function
+// window.performance.mark("measure_projects", "mark_start_projects", "mark_end_projects");
+// var timeToProjects = window.performance.getEntriesByName("measure_projects");
+// console.log("Time to load projects: " + timeToProjects[0].duration + "ms");
+
 $(document).click(function(loc) {
   var x = loc.pageX;
   var y = loc.pageY;
@@ -434,4 +510,12 @@ $(document).click(function(loc) {
 
 });
 
+// window.performance.mark("mark_start_map");
+
 $("#mapDiv").append(googleMap);
+
+// window.performance.mark("mrk_end_map");
+// window.performance.mark("measure_map", "mark_start_map", "mark_end_map");
+// var timeToMap = window.performance.getEntriesByName("measure_map");
+// console.log("Time to load map: " + timeToMap[0].duration + "ms");
+

@@ -1,4 +1,5 @@
 # Move-Planner-App
+==================
 
 This is a project for Udacity which utilizes AJAX, and API's, to create a move planner. A user can enter an
 address and see the [Google Street View](https://www.google.com/maps/views/streetview?gl=us) of the queried

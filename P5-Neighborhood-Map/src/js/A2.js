@@ -217,10 +217,6 @@ $(loadData);
 //console.log(self.venueList()[i]);
 
 // ** Add locations from array to the place list and the mobile dropdown-menu ** //
-//
-// ** locations added to placeList for desktop ** //
-
-    // $('#loclist .placeList').append('<li><a>' + Model[i].name + '</a></li>');
 
 // ** locations added to #uiList ** //
 
@@ -250,14 +246,11 @@ $(loadData);
      }
 };
 
-
 //** Initialize Google Maps **//
 var map = new google.maps.Map(document.getElementById('map-canvas'), {
       center: new google.maps.LatLng(32.789356, -96.801788),
       zoom: 13,
 });
-
-
 
 $(document).ready(function(){
 ko.applyBindings(new ViewModel());
