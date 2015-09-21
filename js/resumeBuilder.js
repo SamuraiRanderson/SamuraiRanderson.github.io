@@ -397,13 +397,13 @@ var projects = {
 		" locations throughout Dallas, TX.",
 		"courses" : "JavaScript Testing: Developing Apps with Confidence - Udacity",
 		"images" : ["images/Map_Holder.jpg"],
-		"url" : ["http://samurairanderson.github.io."]
+		"url" : ["http://samurairanderson.github.io/Neighborhood-Map"]
 	},
 	{
 		"title" : "Website Performance Optimization",
 		"dates" : "2015",
-		"description" : "In this project our cohort was assigned the challenge of tackling, and correcting, some performance-related issues " +
-		"that exist on a website that was provided to us. The main tasks were to achieve a Google PageSpeed Insights score of 90+ for index.html, " +
+		"description" : "I was assigned the challenge of tackling, and correcting, some performance-related issues " +
+		"on an existing website that was provided to us. The main tasks were to achieve a Google PageSpeed Insights score of 90+ for index.html, " +
 		"achieving 60 Frames Per Second for pizza.html, and getting the pizza size animations on pizza.html to resize in under 5 ms.<br><br>" +
 		"The initial Google PageSpeed Insight scores for the site were - Mobile: 26/100, Desktop: 29/100, and using Google Dev Tools I measured" +
 		" the Frames Per Second between 20 - 30 FPS and 83.33ms to resize the animations.  The performance modifications, and optimizations, that I" +
