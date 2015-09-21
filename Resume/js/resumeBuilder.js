@@ -388,7 +388,7 @@ var projects = {
 		" break the existing functionality without having to manually test all aspects of the code.",
 		"courses" : "JavaScript Testing: Developing Apps with Confidence - Udacity",
 		"images" : ["images/jasmine_1.jpg"],
-		"url" : ["http://samurairanderson.github.io."]
+		"url" : ["http://samurairanderson.github.io"]
 	},
 	{
 		"title" : "Neighborhood Map Project",
@@ -397,7 +397,7 @@ var projects = {
 		" locations throughout Dallas, TX.",
 		"courses" : "JavaScript Testing: Developing Apps with Confidence - Udacity",
 		"images" : ["images/Map_Holder.jpg"],
-		"url" : ["http://samurairanderson.github.io."]
+		"url" : ["http://samurairanderson.github.io/Neighborhood-Map"]
 	},
 	{
 		"title" : "Website Performance Optimization",
