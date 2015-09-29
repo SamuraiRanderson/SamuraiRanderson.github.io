@@ -16,6 +16,21 @@ var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 var HTMLskillsStart = '<h3 id="skillsH3">Skills at a Glance:</h3><ul id="skills" class="flex-box"></ul>';
 var HTMLskills = '<li class="flex-item"><span class="contact-text">%data%</span></li>';
 
+var HTMLlanguagesStart = '<h3 id="languagesH3">Languages:</h3><ul id="languages" class="flex-box"></ul>';
+var HTMLlanguages = '<li class="flex-item"><span class="contact-text">%data%</span></li>';
+
+var HTMLframeworksStart = '<h3 id="frameworksH3">Frameworks & Libraries:</h3><ul id="frameworks" class="flex-box"></ul>';
+var HTMLframeworks = '<li class="flex-item"><span class="contact-text">%data%</span></li>';
+
+// var HTMLlibrariesStart = '<h3 id="librariesH3">Libraries:</h3><ul id="libraries" class="flex-box"></ul>';
+// var HTMLlibraries = '<li class="flex-item"><span class="contact-text">%data%</span></li>';
+
+var HTMLbuildtoolsStart = '<h3 id="buildtoolsH3">Build Tools:</h3><ul id="buildtools" class="flex-box"></ul>';
+var HTMLbuildtools = '<li class="flex-item"><span class="contact-text">%data%</span></li>';
+
+var HTMLadditionalStart = '<h3 id="additionalH3">Additional Skills:</h3><ul id="additional" class="flex-box"></ul>';
+var HTMLadditionals = '<li class="flex-item"><span class="contact-text">%data%</span></li>';
+
 var HTMLsummaryStart = '<div class="summary-entry"></div>';
 var HTMLsummaryDescription = '<p><br>%data%</p>';
 

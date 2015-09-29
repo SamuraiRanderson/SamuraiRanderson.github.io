@@ -50,18 +50,29 @@ h2 {
 
 h3 {
   color: #FE5000;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
-  line-height: 22px;
+  /*line-height: 22px;*/
   padding-bottom: 0;
-  padding-top: 26px;
-  padding-left: 5%;
-  padding-right: 5%;
+  /*padding-top: 26px;*/
+  /*padding-left: 5%;
+  padding-right: 5%;*/
 }
 
 h4 {
   color: #FE5000;
   font-size: 14px;
+  font-weight: bold;
+  line-height: 17px;
+  padding:10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+h5 {
+  color: #FE5000;
+  font-size: 18px;
+  font-weight: bold;
   font-weight: bold;
   line-height: 17px;
   padding:10px;
@@ -85,13 +96,22 @@ h4 {
 
 }
 
-#skillsH3 {
+/*#skillsH3, #frameworksH3,
+#librariesH3, #buildtoolsH3, #additionalH3 {
   color: #FE5000;
   font-size: 18px;
   padding-bottom: 0;
   padding-top: 0;
   display: none;
-}
+}*/
+
+/*#languagesH3 {
+  color: #FE5000;
+  font-size: 18px;
+  padding-bottom: 0;
+  padding-top: 0;
+  display: none;
+}*/
 
 p {
   color: #333333;
@@ -126,6 +146,10 @@ c {
 i {
   color: hsla(0,0%,20%,1);
   text-shadow: hsla(0,0%,40%,.5) 0 -1px 0, hsla(0,0%,100%,.6) 0 2px 1px;
+}
+
+i:hover {
+  color: #FE5000;
 }
 
 .welcome-message {
@@ -214,7 +238,7 @@ i {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 10px;
+  /*padding: 10px;*/
 }
 
 .contact-box {
@@ -241,7 +265,8 @@ ul {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
   float: left;
   height: 200px;
-  margin-bottom: 10px;
+  margin: 15px 15px 10px 0;
+  /*margin-bottom: 10px;*/
   width: 200px;
 }
 
@@ -334,6 +359,10 @@ span {
   text-align: center;
 }
 
+.i .fa-2x {
+
+}
+
 @media only screen and (max-width: 1024px) {
   #letsConnect {
     margin-top: 5%;
@@ -342,7 +371,24 @@ span {
 
 @media only screen and (max-width:900px) {
   .biopic {
-    width: 175px;
+    display:none;
+  }
+
+  #skills, #frameworks, #languages,
+  #libraries, #buildtools, #additional {
+    display: none;
+  }
+
+  #skillsH3, #frameworksH3, #languagesH3,
+  #librariesH3, #buildtoolsH3, #additionalH3 {
+    display: none;
+  }
+
+  .welcome-message {
+    display: none;
+  }
+  .contact-box {
+    display:none;
   }
 }
 
@@ -398,6 +444,15 @@ and (-webkit-min-device-pixel-ratio: 1) {
   .welcome-message {
     display: none;
   }
+
+  #skills, #frameworks, #languages,
+  #libraries, #buildtools, #additional {
+    display: none;
+  }
+
+  #skillsH3, #frameworksH3, #languagesH3,
+  #librariesH3, #buildtoolsH3, #additionalH3 {
+    display: none;
 }
 
 /* iPad (portrait) */
@@ -460,6 +515,15 @@ and (-webkit-min-device-pixel-ratio: 1) {
   .welcome-message {
     display: none;
   }
+
+  #skills, #frameworks, #languages,
+  #libraries, #buildtools, #additional {
+    display: none;
+  }
+
+  #skillsH3, #frameworksH3, #languagesH3,
+  #librariesH3, #buildtoolsH3, #additionalH3 {
+    display: none;
 }
 
 /*----------iPHONE 5/s----------*/
@@ -510,6 +574,16 @@ and (-webkit-min-device-pixel-ratio: 2) {
   .welcome-message {
     display: none;
   }
+
+  #skills, #frameworks, #languages,
+  #libraries, #buildtools, #additional {
+    display: none;
+  }
+
+  #skillsH3, #frameworksH3, #languagesH3,
+  #librariesH3, #buildtoolsH3, #additionalH3 {
+    display: none;
+  }
 }
 
 /*iphone 5/5s Portrait*/
@@ -527,20 +601,21 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 
   #letsConnect {
-    margin-top: 15%;
+    margin-top: 25%;
   }
 
-  #name, #role {
+  #name {
     display: block;
     margin: auto;
     text-align: center;
-  }
-  #name {
     font-size: 35px;
     padding: 10px;
   }
 
   #role {
+    display: block;
+    margin: auto;
+    text-align: center;
     font-size: 22px;
   }
 
@@ -558,7 +633,32 @@ and (-webkit-min-device-pixel-ratio: 2) {
   .welcome-message {
     display: none;
   }
-}
+
+  li.flex-item {
+    display: none;
+    height: 35px;
+    width: 36px;
+  }
+
+  /*li.flex-item a i {
+    display: inline;
+    height: 36px;
+    width: 36px;
+  }*/
+
+  .contact-text {
+  display:none;
+  }
+
+  #skills, #frameworks, #languages,
+  #libraries, #buildtools, #additional {
+    display: none;
+  }
+
+  #skillsH3, #frameworksH3, #languagesH3,
+  #librariesH3, #buildtoolsH3, #additionalH3 {
+    display: none;
+  }
 
 /*----------iPHONE 6----------*/
 /*iPhone 6 Landscape*/
@@ -607,6 +707,16 @@ and (-webkit-min-device-pixel-ratio: 2) {
   .welcome-message {
     display: none;
   }
+
+  #skills, #frameworks, #languages,
+  #libraries, #buildtools, #additional {
+    display: none;
+  }
+
+  #skillsH3, #frameworksH3, #languagesH3,
+  #librariesH3, #buildtoolsH3, #additionalH3 {
+    display: none;
+  }
 }
 
 /*iPhone 6 Portrait*/
@@ -653,6 +763,16 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 
   .welcome-message {
+    display: none;
+  }
+
+  #skills, #frameworks, #languages,
+  #libraries, #buildtools, #additional {
+    display: none;
+  }
+
+  #skillsH3, #frameworksH3, #languagesH3,
+  #librariesH3, #buildtoolsH3, #additionalH3 {
     display: none;
   }
 }
@@ -705,6 +825,16 @@ and (-webkit-min-device-pixel-ratio: 2) {
   .welcome-message {
     display: none;
   }
+
+  #skills, #frameworks, #languages,
+  #libraries, #buildtools, #additional {
+    display: none;
+  }
+
+  #skillsH3, #frameworksH3, #languagesH3,
+  #librariesH3, #buildtoolsH3, #additionalH3 {
+    display: none;
+  }
 }
 
 /*iphone 6+ Portrait*/
@@ -752,6 +882,16 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 
   .welcome-message {
+    display: none;
+  }
+
+  #skills, #frameworks, #languages,
+  #libraries, #buildtools, #additional {
+    display: none;
+  }
+
+  #skillsH3, #frameworksH3, #languagesH3,
+  #librariesH3, #buildtoolsH3, #additionalH3 {
     display: none;
   }
 }
@@ -804,6 +944,16 @@ and (-webkit-min-device-pixel-ratio: 2){
   .welcome-message {
     display: none;
   }
+
+  #skills, #frameworks, #languages,
+  #libraries, #buildtools, #additional {
+    display: none;
+  }
+
+  #skillsH3, #frameworksH3, #languagesH3,
+  #librariesH3, #buildtoolsH3, #additionalH3 {
+    display: none;
+  }
 }
 
 /*------G3 Portrait------*/
@@ -821,7 +971,7 @@ and (-webkit-min-device-pixel-ratio: 2){
   }
 
   #letsConnect {
-    margin-top: 15%;
+    margin-top: 25%;
   }
 
   #name, #role {
@@ -851,6 +1001,16 @@ and (-webkit-min-device-pixel-ratio: 2){
   }
 
   .welcome-message {
+    display: none;
+  }
+
+  #skills, #frameworks, #languages,
+  #libraries, #buildtools, #additional {
+    display: none;
+  }
+
+  #skillsH3, #frameworksH3, #languagesH3,
+  #librariesH3, #buildtoolsH3, #additionalH3 {
     display: none;
   }
 }
@@ -903,6 +1063,16 @@ and (-webkit-min-device-pixel-ratio: 3){
   .welcome-message {
     display: none;
   }
+
+  #skills, #frameworks, #languages,
+  #libraries, #buildtools, #additional {
+    display: none;
+  }
+
+  #skillsH3, #frameworksH3, #languagesH3,
+  #librariesH3, #buildtoolsH3, #additionalH3 {
+    display: none;
+  }
 }
 
 /*------G3 Portrait------*/
@@ -950,6 +1120,16 @@ and (-webkit-min-device-pixel-ratio: 3){
   }
 
   .welcome-message {
+    display: none;
+  }
+
+  #skills, #frameworks, #languages,
+  #libraries, #buildtools, #additional {
+    display: none;
+  }
+
+  #skillsH3, #frameworksH3, #languagesH3,
+  #librariesH3, #buildtoolsH3, #additionalH3 {
     display: none;
   }
 }
@@ -1002,6 +1182,16 @@ and (-webkit-min-device-pixel-ratio: 3){
   .welcome-message {
     display: none;
   }
+
+  #skills, #frameworks, #languages,
+  #libraries, #buildtools, #additional {
+    display: none;
+  }
+
+  #skillsH3, #frameworksH3, #languagesH3,
+  #librariesH3, #buildtoolsH3, #additionalH3 {
+    display: none;
+  }
 }
 
 /*------G3 Portrait------*/
@@ -1049,6 +1239,16 @@ and (-webkit-min-device-pixel-ratio: 3){
   }
 
   .welcome-message {
+    display: none;
+  }
+
+  #skills, #frameworks, #languages,
+  #libraries, #buildtools, #additional {
+    display: none;
+  }
+
+  #skillsH3, #frameworksH3, #languagesH3,
+  #librariesH3, #buildtoolsH3, #additionalH3 {
     display: none;
   }
 }

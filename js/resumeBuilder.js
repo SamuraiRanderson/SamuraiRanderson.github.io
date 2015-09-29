@@ -2,7 +2,12 @@
 var bio = {
 	"name" : "Robert Anderson",
 	"role" : "Front End Web Developer",
-	"skills" : ["HTML5","CSS3","JavaScript","jQuery","Bootstrap","Git / GitHub","KnockoutJS"],
+	//"skills" : ["HTML5","CSS3","JavaScript","jQuery","Bootstrap","Git / GitHub","KnockoutJS"],
+	"languages": ["HTML5, CSS3, Javascript"],
+	"frameworks": ["Bootstrap, Knockout.js, Backbone.js, jQuery"],
+	//"libraries" : ["jQuery"],
+	"buildtools" : ["Git / GitHub, NPM, Gulp, Chrome Dev Tools"],
+	"additional" : ["60FPS, Responsive Design"],
 	"contacts" : {
 		"mobile" : "214-385-1163",
 		"email" : "robertanderson5@protonmail.com",
@@ -12,7 +17,8 @@ var bio = {
 		"location" : "Dallas, TX",
 		"placesLived": "Denver, CO"
 	},
-	"welcomeMessage" : "Hi! Thanks for stopping by and checking out my résumé!",
+	//"welcomeMessage" : "Hi! Thanks for stopping by and checking out my résumé!",
+	"welcomeMessage" : "Skills at a glance:",
 	"picture" : "images/resume-profile_mini.jpg",
 	};
 
@@ -34,25 +40,55 @@ formattedContactInfo.push(HTMLlocation.replace("%data%", bio.contacts.location))
 
  for(i in formattedContactInfo) {
  	$("#topContacts").append(formattedContactInfo[i]);
-// 	// $("#footerContacts").append(formattedContactInfo[i]);
+ 	// $("#footerContacts").append(formattedContactInfo[i]);
  }
 
-if (bio.skills.length > 0) {
-	$("#header").append(HTMLskillsStart);
-	var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
-	$("#skills").append(formattedSkill);
-		formattedSkill = HTMLskills.replace("%data%", bio.skills[1]);
-	$("#skills").append(formattedSkill);
-		formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
-	$("#skills").append(formattedSkill);
-		formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
-	$("#skills").append(formattedSkill);
-		formattedSkill = HTMLskills.replace("%data%", bio.skills[4]);
-	$("#skills").append(formattedSkill);
-		formattedSkill = HTMLskills.replace("%data%", bio.skills[5]);
-	$("#skills").append(formattedSkill);
-	formattedSkill = HTMLskills.replace("%data%", bio.skills[6]);
-	$("#skills").append(formattedSkill);
+// if (bio.skills.length > 0) {
+// $("#header").append(HTMLskillsStart);
+// var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
+// $("#skills").append(formattedSkill);
+// 	formattedSkill = HTMLskills.replace("%data%", bio.skills[1]);
+// $("#skills").append(formattedSkill);
+// 	formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
+// $("#skills").append(formattedSkill);
+// 	formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
+// $("#skills").append(formattedSkill);
+// 	formattedSkill = HTMLskills.replace("%data%", bio.skills[4]);
+// $("#skills").append(formattedSkill);
+// 	formattedSkill = HTMLskills.replace("%data%", bio.skills[5]);
+// $("#skills").append(formattedSkill);
+// formattedSkill = HTMLskills.replace("%data%", bio.skills[6]);
+// $("#skills").append(formattedSkill);
+//}
+
+if (bio.languages.length > 0) {
+	$("#header").append(HTMLlanguagesStart);
+	var formattedLanguage = HTMLlanguages.replace("%data%", bio.languages[0]);
+	$("#languages").append(formattedLanguage);
+}
+
+if (bio.frameworks.length > 0) {
+	$("#header").append(HTMLframeworksStart);
+	var formattedFramework = HTMLframeworks.replace("%data%", bio.frameworks[0]);
+	$("#frameworks").append(formattedFramework);
+}
+
+// if (bio.libraries.length > 0) {
+// 	$("#header").append(HTMLlibrariesStart);
+// 	var formattedLibrary = HTMLlibraries.replace("%data%", bio.libraries[0]);
+// 	$("#libraries").append(formattedLibrary);
+// }
+
+if (bio.buildtools.length > 0) {
+	$("#header").append(HTMLbuildtoolsStart);
+	var formattedBuildtool = HTMLbuildtools.replace("%data%", bio.buildtools[0]);
+	$("#buildtools").append(formattedBuildtool);
+}
+
+if (bio.additional.length > 0) {
+	$("#header").append(HTMLadditionalStart);
+	var formattedAdditional = HTMLadditionals.replace("%data%", bio.additional[0]);
+	$("#additional").append(formattedAdditional);
 }
 
 // window.performance.mark("mark_end_bio");
