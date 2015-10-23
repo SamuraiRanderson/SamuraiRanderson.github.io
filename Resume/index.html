@@ -6,16 +6,16 @@
     <title>Resume</title>
 
     <!-- Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet'>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,600'>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="dist/css/style.min.css">
 
     <!-- Font-Awesome -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- Google Maps API -->
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?libraries=places" async></script>
 
   </head>
 
@@ -69,17 +69,17 @@
       </div>
 
     </div>
-
-    <!-- Bootstrap -->
-    <script type="dist/js/bootstrap.min.js"></script>
-
     <!-- jQuery -->
     <script src="dist/js/jQuery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="dist/js/bootstrap.min.js"></script>
 
     <!-- Custom JS -->
     <script src="dist/js/helper.min.js"></script>
     <script src="dist/js/interaction.min.js"></script>
     <script src="dist/js/resumeBuilder.min.js"></script>
+
     <script type="text/javascript">
     if(document.getElementsByClassName('flex-item').length === 0) {
       document.getElementById('topContacts').style.display = 'none';
