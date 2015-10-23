@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     margin: auto;
     text-align: center;
@@ -122,3 +123,258 @@ li {
 
 
 
+||||||| merged common ancestors
+=======
+<<<<<<< HEAD
+body {
+    margin: auto;
+    text-align: center;
+    width: 515px;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 46px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    color: red;
+    font-family: 'Anton', sans-serif;
+    font-size: 35px;
+    margin: 0px;
+    padding: 0px 0px 30px 0px;
+    text-align: center;
+}
+
+li {
+    font-family: 'Anton', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: left;
+}
+
+#score {
+    color: blue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 23px;
+    position: absolute;;
+}
+
+#lives {
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin: 23px 0px 0px 0px;
+    position: absolute;
+    text-align: right;
+    width: 515px;
+}
+
+#startGame {
+    background-color: red;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    height: 75px;
+    position: center;
+    width: 300px;
+}
+
+#startGameScreen {
+    background-color: #e3edfb;
+    border-radius: 6px;
+    border: 1px solid black;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    height: 580px;
+    margin: 0px;
+    padding: 20px 0px 50px 0px;
+    position: absolute;
+    text-align: center;
+    width: 515px;
+    z-index: 1000;
+}
+
+#gameOver {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid black;
+    color: red;
+    display: none;
+    height: 560px;
+    margin: 10px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
+    position: absolute;
+    text-align: center;
+    width: 515px;
+    z-index: 1000;
+}
+
+#resetButton {
+    margin: 30px 0px 0px 0px;
+    position: center;
+}
+
+.startImg {
+    height: 100px;
+    padding: 10px;
+    width: 100px;
+}
+
+.skullImg {
+    height: 300px;
+    padding: 10px;
+    width: 300px;
+}
+
+.button {
+    font-family: 'Roboto', sans-serif;
+    height: 75px;
+    width: 300px;
+    background-color: green;
+    border-radius: 3px;
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+    font-size: 35px;
+    margin: 50px 10px 10px 10px;
+    text-align: center;
+}
+
+
+
+
+||||||| merged common ancestors
+=======
+body {
+    margin: auto;
+    text-align: center;
+    width: 515px;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 46px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    color: red;
+    font-family: 'Anton', sans-serif;
+    font-size: 35px;
+    margin: 0px;
+    padding: 0px 0px 30px 0px;
+    text-align: center;
+}
+
+li {
+    font-family: 'Anton', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: left;
+}
+
+#score {
+    color: blue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 23px;
+    position: absolute;;
+}
+
+#lives {
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin: 23px 0px 0px 0px;
+    position: absolute;
+    text-align: right;
+    width: 515px;
+}
+
+#startGame {
+    background-color: red;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    height: 75px;
+    position: center;
+    width: 300px;
+}
+
+#startGameScreen {
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid black;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    height: 580px;
+    margin: 0px;
+    padding: 20px 0px 50px 0px;
+    position: absolute;
+    text-align: center;
+    width: 515px;
+    z-index: 1000;
+}
+
+#gameOver {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid black;
+    color: red;
+    display: none;
+    height: 560px;
+    margin: 10px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
+    position: absolute;
+    text-align: center;
+    width: 515px;
+    z-index: 1000;
+}
+
+#resetButton {
+    margin: 30px 0px 0px 0px;
+    position: center;
+}
+
+.startImg {
+    height: 100px;
+    padding: 10px;
+    width: 100px;
+}
+
+.skullImg {
+    height: 300px;
+    padding: 10px;
+    width: 300px;
+}
+
+.button {
+    font-family: 'Roboto', sans-serif;
+    height: 75px;
+    width: 300px;
+    background-color: green;
+    border-radius: 3px;
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+    font-size: 35px;
+    margin: 50px 10px 10px 10px;
+    text-align: center;
+}
+
+
+
+
+>>>>>>> master
+>>>>>>> 97efcd20487420cd0b8e226c937c79791b7c2774
