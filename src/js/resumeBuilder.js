@@ -423,7 +423,7 @@ var projects = {
 		" and DOM manipulation." + "<br>" + "<br>" + "The practice of scripting well written tests gives us the ability to analyze whether new code introduced to a program will" +
 		" break the existing functionality without having to manually test all aspects of the code.",
 		"courses" : "JavaScript Testing: Developing Apps with Confidence - Udacity",
-		"images" : ["src/images/jasmine_1.jpg"],
+		"images" : ["dist/images/jasmine_1.min.jpg"],
 		"url" : ["https://github.com/SamuraiRanderson/P6-Feedreader"]
 	},
 	{
@@ -434,7 +434,7 @@ var projects = {
 		" Neighborhood Map is a responsive single page application that utilizes the Google Maps API, and Instagram's API, to showcase some fantastic locations in Dallas, TX." +
 		" Feel free to check out this application and see some great locations Dallas has to offer!",
 		"courses" : "JavaScript Testing: Developing Apps with Confidence - Udacity",
-		"images" : ["src/images/Map_Holder.jpg"],
+		"images" : ["dist/images/Map_Holder.min.jpg"],
 		"url" : ["https://github.com/SamuraiRanderson/Neighborhood-Map"]
 	},
 	{
@@ -448,7 +448,7 @@ var projects = {
 		" implemented spiked performance to - Mobile: 93/100, Desktop: 95/100 and enabled the site to run at 60 FPS and the animations were able to resize" +
 		" in under 5ms.",
 		"courses" : "Website Performance Optimization, Browser Rendering Optimization",
-		"images" : ["src/images/p4.jpg"],
+		"images" : ["dist/images/p4.min.jpg"],
 		"url" : ["https://github.com/SamuraiRanderson/P4-Website-Optimization/blob/master/README.md"]
 
 	},
@@ -472,7 +472,7 @@ var projects = {
 		" jQuery to create a resume which included images, links and incorporated Google Maps API into the final project." +
 		" This was an excellent project to showcase the power of jQuery and how to use it to manipulate the DOM.",
 		"courses" : "JavaScript Basics, Intro to jQuery",
-		"images" : ["src/images/p2.jpg"],
+		"images" : ["dist/images/p2.min.jpg"],
 		"url" : ["http://samurairanderson.github.io."]
 	},
 	{
@@ -484,7 +484,7 @@ var projects = {
 		" a new neighborhood. Asynchronous JavaScript requests (using jQuery’s AJAX functionality) were used to make ensure a smooth user experience" +
 		" allowing the application to interact with server-side APIs without forcing reloads, script pausing or disrupting UI rendering.",
 		"courses" : "Intro to AJAX: Making Asynchronous Requests with jQuery",
-		"images" : ["src/images/Move_Planner.jpg"],
+		"images" : ["dist/images/Move_Planner.min.jpg"],
 		"url" : ["http://samurairanderson.github.io/Move-Planner-App"]
 	}/*
 	{
