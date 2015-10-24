@@ -276,7 +276,7 @@ ul#footerContacts li {
   width: 200px;
 }
 
-img {
+.project-entry img {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
   height: 148px;
   margin: 15px 0 15px 0;
