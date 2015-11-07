@@ -1,9 +1,7 @@
-frontend-nanodegree-arcade-game / The Kitten Game
+The Kitten Game
 =================================================
 
-## Game Instructions 
-
-[Click Here](http://samurairanderson.github.io/P3-Classic-Arcade-Game-Clone)
+#### Game Instructions 
 
 * Use the arrow keys to move up, down, left and right. 
 
@@ -17,10 +15,6 @@ frontend-nanodegree-arcade-game / The Kitten Game
 
 * Collect 100 points by collecting random items (shopping bag, chocolate bar, pizza, soda or coffee) that spawn on the game canvas.
 
-## Good luck & thanks for playing!!
+To play the game you can [Click Here](http://samurairanderson.github.io/P3-Classic-Arcade-Game-Clone)! 
 
-
-
-Students should use this rubric: https://www.udacity.com/course/viewer#!/c-ud015/l-3072058665/m-3072588797
-
-for self-checking their submission.
+#### Good luck & thanks for playing!!
