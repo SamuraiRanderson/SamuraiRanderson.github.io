@@ -2,7 +2,7 @@
   "name": "P3-Classic-Arcade-Game-Clone",
   "version": "0.1.0",
   "devDependencies": {
-    "grunt": "~0.4.1",
+    "grunt": ">=1.5.3",
     "grunt-contrib-concat": "^0.5.1"
   }
 }
